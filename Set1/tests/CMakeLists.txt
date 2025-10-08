@@ -1,0 +1,3 @@
+add_executable(test_hex_to_base64 test_hex_to_base64.cpp)
+target_link_libraries(test_hex_to_base64 gtest gtest_main pthread)
+add_test(NAME HexToBase64Test COMMAND test_hex_to_base64)

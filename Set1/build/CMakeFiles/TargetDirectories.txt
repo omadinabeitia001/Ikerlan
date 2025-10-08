@@ -1,0 +1,2 @@
+/home/student/Desktop/Ikerlan/Set1/build/CMakeFiles/edit_cache.dir
+/home/student/Desktop/Ikerlan/Set1/build/CMakeFiles/rebuild_cache.dir
