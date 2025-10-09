@@ -57,13 +57,23 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/Ikerlan/Set1
+CMAKE_SOURCE_DIR = /home/student/Ikerlan/Set1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/Ikerlan/Set1/build
+CMAKE_BINARY_DIR = /home/student/Ikerlan/Set1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -87,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/Ikerlan/Set1/build/CMakeFiles /home/student/Desktop/Ikerlan/Set1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set1/build/CMakeFiles /home/student/Ikerlan/Set1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/Ikerlan/Set1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +126,154 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named hex_to_base64
+
+# Build rule for target.
+hex_to_base64: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hex_to_base64
+.PHONY : hex_to_base64
+
+# fast build rule for target.
+hex_to_base64/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/build
+.PHONY : hex_to_base64/fast
+
+#=============================================================================
+# Target rules for targets named fixed_xor
+
+# Build rule for target.
+fixed_xor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fixed_xor
+.PHONY : fixed_xor
+
+# fast build rule for target.
+fixed_xor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fixed_xor.dir/build.make CMakeFiles/fixed_xor.dir/build
+.PHONY : fixed_xor/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_fixed_xor_tests
+
+# Build rule for target.
+run_fixed_xor_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_fixed_xor_tests
+.PHONY : run_fixed_xor_tests
+
+# fast build rule for target.
+run_fixed_xor_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_fixed_xor_tests.dir/build.make tests/CMakeFiles/run_fixed_xor_tests.dir/build
+.PHONY : run_fixed_xor_tests/fast
+
+src/fixed_xor.o: src/fixed_xor.cpp.o
+.PHONY : src/fixed_xor.o
+
+# target to build an object file
+src/fixed_xor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fixed_xor.dir/build.make CMakeFiles/fixed_xor.dir/src/fixed_xor.cpp.o
+.PHONY : src/fixed_xor.cpp.o
+
+src/fixed_xor.i: src/fixed_xor.cpp.i
+.PHONY : src/fixed_xor.i
+
+# target to preprocess a source file
+src/fixed_xor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fixed_xor.dir/build.make CMakeFiles/fixed_xor.dir/src/fixed_xor.cpp.i
+.PHONY : src/fixed_xor.cpp.i
+
+src/fixed_xor.s: src/fixed_xor.cpp.s
+.PHONY : src/fixed_xor.s
+
+# target to generate assembly for a file
+src/fixed_xor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fixed_xor.dir/build.make CMakeFiles/fixed_xor.dir/src/fixed_xor.cpp.s
+.PHONY : src/fixed_xor.cpp.s
+
+src/fixed_xor_main.o: src/fixed_xor_main.cpp.o
+.PHONY : src/fixed_xor_main.o
+
+# target to build an object file
+src/fixed_xor_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fixed_xor.dir/build.make CMakeFiles/fixed_xor.dir/src/fixed_xor_main.cpp.o
+.PHONY : src/fixed_xor_main.cpp.o
+
+src/fixed_xor_main.i: src/fixed_xor_main.cpp.i
+.PHONY : src/fixed_xor_main.i
+
+# target to preprocess a source file
+src/fixed_xor_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fixed_xor.dir/build.make CMakeFiles/fixed_xor.dir/src/fixed_xor_main.cpp.i
+.PHONY : src/fixed_xor_main.cpp.i
+
+src/fixed_xor_main.s: src/fixed_xor_main.cpp.s
+.PHONY : src/fixed_xor_main.s
+
+# target to generate assembly for a file
+src/fixed_xor_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fixed_xor.dir/build.make CMakeFiles/fixed_xor.dir/src/fixed_xor_main.cpp.s
+.PHONY : src/fixed_xor_main.cpp.s
+
+src/hex_to_base64.o: src/hex_to_base64.cpp.o
+.PHONY : src/hex_to_base64.o
+
+# target to build an object file
+src/hex_to_base64.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/src/hex_to_base64.cpp.o
+.PHONY : src/hex_to_base64.cpp.o
+
+src/hex_to_base64.i: src/hex_to_base64.cpp.i
+.PHONY : src/hex_to_base64.i
+
+# target to preprocess a source file
+src/hex_to_base64.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/src/hex_to_base64.cpp.i
+.PHONY : src/hex_to_base64.cpp.i
+
+src/hex_to_base64.s: src/hex_to_base64.cpp.s
+.PHONY : src/hex_to_base64.s
+
+# target to generate assembly for a file
+src/hex_to_base64.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/src/hex_to_base64.cpp.s
+.PHONY : src/hex_to_base64.cpp.s
+
+src/hex_to_base64_main.o: src/hex_to_base64_main.cpp.o
+.PHONY : src/hex_to_base64_main.o
+
+# target to build an object file
+src/hex_to_base64_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/src/hex_to_base64_main.cpp.o
+.PHONY : src/hex_to_base64_main.cpp.o
+
+src/hex_to_base64_main.i: src/hex_to_base64_main.cpp.i
+.PHONY : src/hex_to_base64_main.i
+
+# target to preprocess a source file
+src/hex_to_base64_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/src/hex_to_base64_main.cpp.i
+.PHONY : src/hex_to_base64_main.cpp.i
+
+src/hex_to_base64_main.s: src/hex_to_base64_main.cpp.s
+.PHONY : src/hex_to_base64_main.s
+
+# target to generate assembly for a file
+src/hex_to_base64_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/src/hex_to_base64_main.cpp.s
+.PHONY : src/hex_to_base64_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +282,23 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... fixed_xor"
+	@echo "... hex_to_base64"
+	@echo "... run_fixed_xor_tests"
+	@echo "... run_tests"
+	@echo "... src/fixed_xor.o"
+	@echo "... src/fixed_xor.i"
+	@echo "... src/fixed_xor.s"
+	@echo "... src/fixed_xor_main.o"
+	@echo "... src/fixed_xor_main.i"
+	@echo "... src/fixed_xor_main.s"
+	@echo "... src/hex_to_base64.o"
+	@echo "... src/hex_to_base64.i"
+	@echo "... src/hex_to_base64.s"
+	@echo "... src/hex_to_base64_main.o"
+	@echo "... src/hex_to_base64_main.i"
+	@echo "... src/hex_to_base64_main.s"
 .PHONY : help
 
 
