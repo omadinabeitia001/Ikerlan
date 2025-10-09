@@ -36,6 +36,14 @@ add_executable(repeating_key_xor
     src/repeating_key_xor_main.cpp
 )
 
+add_executable(break_repeating_key_xor
+    src/break_repeating_key_xor.cpp
+    src/hamming_distance.cpp
+    src/break_repeating_key_xor_main.cpp
+    src/single_byte_xor.cpp
+)
+
+
 # Tests
 enable_testing()
 add_subdirectory(tests)

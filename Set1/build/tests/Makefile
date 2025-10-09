@@ -196,6 +196,58 @@ run_repeating_key_xor_tests/fast:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/build
 .PHONY : run_repeating_key_xor_tests/fast
 
+# Convenience name for target.
+tests/CMakeFiles/run_hamming_distance_tests.dir/rule:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_hamming_distance_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_hamming_distance_tests.dir/rule
+
+# Convenience name for target.
+run_hamming_distance_tests: tests/CMakeFiles/run_hamming_distance_tests.dir/rule
+.PHONY : run_hamming_distance_tests
+
+# fast build rule for target.
+run_hamming_distance_tests/fast:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_hamming_distance_tests.dir/build.make tests/CMakeFiles/run_hamming_distance_tests.dir/build
+.PHONY : run_hamming_distance_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/rule:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/rule
+
+# Convenience name for target.
+run_break_repeating_key_xor_tests: tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/rule
+.PHONY : run_break_repeating_key_xor_tests
+
+# fast build rule for target.
+run_break_repeating_key_xor_tests/fast:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build
+.PHONY : run_break_repeating_key_xor_tests/fast
+
+__/src/break_repeating_key_xor.o: __/src/break_repeating_key_xor.cpp.o
+.PHONY : __/src/break_repeating_key_xor.o
+
+# target to build an object file
+__/src/break_repeating_key_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/break_repeating_key_xor.cpp.o
+.PHONY : __/src/break_repeating_key_xor.cpp.o
+
+__/src/break_repeating_key_xor.i: __/src/break_repeating_key_xor.cpp.i
+.PHONY : __/src/break_repeating_key_xor.i
+
+# target to preprocess a source file
+__/src/break_repeating_key_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/break_repeating_key_xor.cpp.i
+.PHONY : __/src/break_repeating_key_xor.cpp.i
+
+__/src/break_repeating_key_xor.s: __/src/break_repeating_key_xor.cpp.s
+.PHONY : __/src/break_repeating_key_xor.s
+
+# target to generate assembly for a file
+__/src/break_repeating_key_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/break_repeating_key_xor.cpp.s
+.PHONY : __/src/break_repeating_key_xor.cpp.s
+
 __/src/detect_single_byte_xor.o: __/src/detect_single_byte_xor.cpp.o
 .PHONY : __/src/detect_single_byte_xor.o
 
@@ -243,6 +295,33 @@ __/src/fixed_xor.s: __/src/fixed_xor.cpp.s
 __/src/fixed_xor.cpp.s:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_fixed_xor_tests.dir/build.make tests/CMakeFiles/run_fixed_xor_tests.dir/__/src/fixed_xor.cpp.s
 .PHONY : __/src/fixed_xor.cpp.s
+
+__/src/hamming_distance.o: __/src/hamming_distance.cpp.o
+.PHONY : __/src/hamming_distance.o
+
+# target to build an object file
+__/src/hamming_distance.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_hamming_distance_tests.dir/build.make tests/CMakeFiles/run_hamming_distance_tests.dir/__/src/hamming_distance.cpp.o
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/hamming_distance.cpp.o
+.PHONY : __/src/hamming_distance.cpp.o
+
+__/src/hamming_distance.i: __/src/hamming_distance.cpp.i
+.PHONY : __/src/hamming_distance.i
+
+# target to preprocess a source file
+__/src/hamming_distance.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_hamming_distance_tests.dir/build.make tests/CMakeFiles/run_hamming_distance_tests.dir/__/src/hamming_distance.cpp.i
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/hamming_distance.cpp.i
+.PHONY : __/src/hamming_distance.cpp.i
+
+__/src/hamming_distance.s: __/src/hamming_distance.cpp.s
+.PHONY : __/src/hamming_distance.s
+
+# target to generate assembly for a file
+__/src/hamming_distance.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_hamming_distance_tests.dir/build.make tests/CMakeFiles/run_hamming_distance_tests.dir/__/src/hamming_distance.cpp.s
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/hamming_distance.cpp.s
+.PHONY : __/src/hamming_distance.cpp.s
 
 __/src/hex_to_base64.o: __/src/hex_to_base64.cpp.o
 .PHONY : __/src/hex_to_base64.o
@@ -299,6 +378,7 @@ __/src/single_byte_xor.o: __/src/single_byte_xor.cpp.o
 __/src/single_byte_xor.cpp.o:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.o
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.o
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/single_byte_xor.cpp.o
 .PHONY : __/src/single_byte_xor.cpp.o
 
 __/src/single_byte_xor.i: __/src/single_byte_xor.cpp.i
@@ -308,6 +388,7 @@ __/src/single_byte_xor.i: __/src/single_byte_xor.cpp.i
 __/src/single_byte_xor.cpp.i:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.i
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.i
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/single_byte_xor.cpp.i
 .PHONY : __/src/single_byte_xor.cpp.i
 
 __/src/single_byte_xor.s: __/src/single_byte_xor.cpp.s
@@ -317,7 +398,32 @@ __/src/single_byte_xor.s: __/src/single_byte_xor.cpp.s
 __/src/single_byte_xor.cpp.s:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.s
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.s
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/single_byte_xor.cpp.s
 .PHONY : __/src/single_byte_xor.cpp.s
+
+test_break_repeating_key_xor.o: test_break_repeating_key_xor.cpp.o
+.PHONY : test_break_repeating_key_xor.o
+
+# target to build an object file
+test_break_repeating_key_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/test_break_repeating_key_xor.cpp.o
+.PHONY : test_break_repeating_key_xor.cpp.o
+
+test_break_repeating_key_xor.i: test_break_repeating_key_xor.cpp.i
+.PHONY : test_break_repeating_key_xor.i
+
+# target to preprocess a source file
+test_break_repeating_key_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/test_break_repeating_key_xor.cpp.i
+.PHONY : test_break_repeating_key_xor.cpp.i
+
+test_break_repeating_key_xor.s: test_break_repeating_key_xor.cpp.s
+.PHONY : test_break_repeating_key_xor.s
+
+# target to generate assembly for a file
+test_break_repeating_key_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/test_break_repeating_key_xor.cpp.s
+.PHONY : test_break_repeating_key_xor.cpp.s
 
 test_detect_single_byte_xor.o: test_detect_single_byte_xor.cpp.o
 .PHONY : test_detect_single_byte_xor.o
@@ -366,6 +472,30 @@ test_fixed_xor.s: test_fixed_xor.cpp.s
 test_fixed_xor.cpp.s:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_fixed_xor_tests.dir/build.make tests/CMakeFiles/run_fixed_xor_tests.dir/test_fixed_xor.cpp.s
 .PHONY : test_fixed_xor.cpp.s
+
+test_hamming_distance.o: test_hamming_distance.cpp.o
+.PHONY : test_hamming_distance.o
+
+# target to build an object file
+test_hamming_distance.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_hamming_distance_tests.dir/build.make tests/CMakeFiles/run_hamming_distance_tests.dir/test_hamming_distance.cpp.o
+.PHONY : test_hamming_distance.cpp.o
+
+test_hamming_distance.i: test_hamming_distance.cpp.i
+.PHONY : test_hamming_distance.i
+
+# target to preprocess a source file
+test_hamming_distance.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_hamming_distance_tests.dir/build.make tests/CMakeFiles/run_hamming_distance_tests.dir/test_hamming_distance.cpp.i
+.PHONY : test_hamming_distance.cpp.i
+
+test_hamming_distance.s: test_hamming_distance.cpp.s
+.PHONY : test_hamming_distance.s
+
+# target to generate assembly for a file
+test_hamming_distance.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_hamming_distance_tests.dir/build.make tests/CMakeFiles/run_hamming_distance_tests.dir/test_hamming_distance.cpp.s
+.PHONY : test_hamming_distance.cpp.s
 
 test_hex_to_base64.o: test_hex_to_base64.cpp.o
 .PHONY : test_hex_to_base64.o
@@ -448,17 +578,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... run_break_repeating_key_xor_tests"
 	@echo "... run_detect_single_byte_xor_tests"
 	@echo "... run_fixed_xor_tests"
+	@echo "... run_hamming_distance_tests"
 	@echo "... run_repeating_key_xor_tests"
 	@echo "... run_single_byte_xor_tests"
 	@echo "... run_tests"
+	@echo "... __/src/break_repeating_key_xor.o"
+	@echo "... __/src/break_repeating_key_xor.i"
+	@echo "... __/src/break_repeating_key_xor.s"
 	@echo "... __/src/detect_single_byte_xor.o"
 	@echo "... __/src/detect_single_byte_xor.i"
 	@echo "... __/src/detect_single_byte_xor.s"
 	@echo "... __/src/fixed_xor.o"
 	@echo "... __/src/fixed_xor.i"
 	@echo "... __/src/fixed_xor.s"
+	@echo "... __/src/hamming_distance.o"
+	@echo "... __/src/hamming_distance.i"
+	@echo "... __/src/hamming_distance.s"
 	@echo "... __/src/hex_to_base64.o"
 	@echo "... __/src/hex_to_base64.i"
 	@echo "... __/src/hex_to_base64.s"
@@ -468,12 +606,18 @@ help:
 	@echo "... __/src/single_byte_xor.o"
 	@echo "... __/src/single_byte_xor.i"
 	@echo "... __/src/single_byte_xor.s"
+	@echo "... test_break_repeating_key_xor.o"
+	@echo "... test_break_repeating_key_xor.i"
+	@echo "... test_break_repeating_key_xor.s"
 	@echo "... test_detect_single_byte_xor.o"
 	@echo "... test_detect_single_byte_xor.i"
 	@echo "... test_detect_single_byte_xor.s"
 	@echo "... test_fixed_xor.o"
 	@echo "... test_fixed_xor.i"
 	@echo "... test_fixed_xor.s"
+	@echo "... test_hamming_distance.o"
+	@echo "... test_hamming_distance.i"
+	@echo "... test_hamming_distance.s"
 	@echo "... test_hex_to_base64.o"
 	@echo "... test_hex_to_base64.i"
 	@echo "... test_hex_to_base64.s"

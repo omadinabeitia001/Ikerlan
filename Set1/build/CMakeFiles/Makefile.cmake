@@ -140,9 +140,12 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/single_byte_xor.dir/DependInfo.cmake"
   "CMakeFiles/detect_single_byte_xor.dir/DependInfo.cmake"
   "CMakeFiles/repeating_key_xor.dir/DependInfo.cmake"
+  "CMakeFiles/break_repeating_key_xor.dir/DependInfo.cmake"
   "tests/CMakeFiles/run_tests.dir/DependInfo.cmake"
   "tests/CMakeFiles/run_fixed_xor_tests.dir/DependInfo.cmake"
   "tests/CMakeFiles/run_single_byte_xor_tests.dir/DependInfo.cmake"
   "tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/DependInfo.cmake"
   "tests/CMakeFiles/run_repeating_key_xor_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/run_hamming_distance_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/DependInfo.cmake"
   )

@@ -60,3 +60,26 @@ target_include_directories(run_repeating_key_xor_tests PRIVATE ${CMAKE_SOURCE_DI
 target_link_libraries(run_repeating_key_xor_tests PRIVATE GTest::gtest_main)
 
 add_test(NAME repeating_key_xor_tests COMMAND run_repeating_key_xor_tests)
+
+add_executable(run_hamming_distance_tests
+    test_hamming_distance.cpp
+    ${CMAKE_SOURCE_DIR}/src/hamming_distance.cpp
+)
+
+target_include_directories(run_hamming_distance_tests PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(run_hamming_distance_tests PRIVATE GTest::gtest_main)
+
+add_test(NAME hamming_distance_tests COMMAND run_hamming_distance_tests)
+
+# Test para Break Repeating-Key XOR
+add_executable(run_break_repeating_key_xor_tests
+    test_break_repeating_key_xor.cpp
+    ${CMAKE_SOURCE_DIR}/src/break_repeating_key_xor.cpp
+    ${CMAKE_SOURCE_DIR}/src/hamming_distance.cpp
+    ${CMAKE_SOURCE_DIR}/src/single_byte_xor.cpp
+)
+
+target_include_directories(run_break_repeating_key_xor_tests PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(run_break_repeating_key_xor_tests PRIVATE GTest::gtest_main)
+
+add_test(NAME break_repeating_key_xor_tests COMMAND run_break_repeating_key_xor_tests)
