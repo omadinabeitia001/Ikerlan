@@ -137,6 +137,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/hex_to_base64.dir/DependInfo.cmake"
   "CMakeFiles/fixed_xor.dir/DependInfo.cmake"
+  "CMakeFiles/single_byte_xor.dir/DependInfo.cmake"
+  "CMakeFiles/detect_single_byte_xor.dir/DependInfo.cmake"
+  "CMakeFiles/repeating_key_xor.dir/DependInfo.cmake"
   "tests/CMakeFiles/run_tests.dir/DependInfo.cmake"
   "tests/CMakeFiles/run_fixed_xor_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/run_single_byte_xor_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/run_repeating_key_xor_tests.dir/DependInfo.cmake"
   )

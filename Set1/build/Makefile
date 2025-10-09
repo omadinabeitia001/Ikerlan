@@ -153,6 +153,45 @@ fixed_xor/fast:
 .PHONY : fixed_xor/fast
 
 #=============================================================================
+# Target rules for targets named single_byte_xor
+
+# Build rule for target.
+single_byte_xor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 single_byte_xor
+.PHONY : single_byte_xor
+
+# fast build rule for target.
+single_byte_xor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_byte_xor.dir/build.make CMakeFiles/single_byte_xor.dir/build
+.PHONY : single_byte_xor/fast
+
+#=============================================================================
+# Target rules for targets named detect_single_byte_xor
+
+# Build rule for target.
+detect_single_byte_xor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detect_single_byte_xor
+.PHONY : detect_single_byte_xor
+
+# fast build rule for target.
+detect_single_byte_xor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/build
+.PHONY : detect_single_byte_xor/fast
+
+#=============================================================================
+# Target rules for targets named repeating_key_xor
+
+# Build rule for target.
+repeating_key_xor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 repeating_key_xor
+.PHONY : repeating_key_xor
+
+# fast build rule for target.
+repeating_key_xor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/repeating_key_xor.dir/build.make CMakeFiles/repeating_key_xor.dir/build
+.PHONY : repeating_key_xor/fast
+
+#=============================================================================
 # Target rules for targets named run_tests
 
 # Build rule for target.
@@ -177,6 +216,93 @@ run_fixed_xor_tests: cmake_check_build_system
 run_fixed_xor_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_fixed_xor_tests.dir/build.make tests/CMakeFiles/run_fixed_xor_tests.dir/build
 .PHONY : run_fixed_xor_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_single_byte_xor_tests
+
+# Build rule for target.
+run_single_byte_xor_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_single_byte_xor_tests
+.PHONY : run_single_byte_xor_tests
+
+# fast build rule for target.
+run_single_byte_xor_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/build
+.PHONY : run_single_byte_xor_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_detect_single_byte_xor_tests
+
+# Build rule for target.
+run_detect_single_byte_xor_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_detect_single_byte_xor_tests
+.PHONY : run_detect_single_byte_xor_tests
+
+# fast build rule for target.
+run_detect_single_byte_xor_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build
+.PHONY : run_detect_single_byte_xor_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_repeating_key_xor_tests
+
+# Build rule for target.
+run_repeating_key_xor_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_repeating_key_xor_tests
+.PHONY : run_repeating_key_xor_tests
+
+# fast build rule for target.
+run_repeating_key_xor_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/build
+.PHONY : run_repeating_key_xor_tests/fast
+
+src/detect_single_byte_xor.o: src/detect_single_byte_xor.cpp.o
+.PHONY : src/detect_single_byte_xor.o
+
+# target to build an object file
+src/detect_single_byte_xor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/detect_single_byte_xor.cpp.o
+.PHONY : src/detect_single_byte_xor.cpp.o
+
+src/detect_single_byte_xor.i: src/detect_single_byte_xor.cpp.i
+.PHONY : src/detect_single_byte_xor.i
+
+# target to preprocess a source file
+src/detect_single_byte_xor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/detect_single_byte_xor.cpp.i
+.PHONY : src/detect_single_byte_xor.cpp.i
+
+src/detect_single_byte_xor.s: src/detect_single_byte_xor.cpp.s
+.PHONY : src/detect_single_byte_xor.s
+
+# target to generate assembly for a file
+src/detect_single_byte_xor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/detect_single_byte_xor.cpp.s
+.PHONY : src/detect_single_byte_xor.cpp.s
+
+src/detect_single_byte_xor_main.o: src/detect_single_byte_xor_main.cpp.o
+.PHONY : src/detect_single_byte_xor_main.o
+
+# target to build an object file
+src/detect_single_byte_xor_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/detect_single_byte_xor_main.cpp.o
+.PHONY : src/detect_single_byte_xor_main.cpp.o
+
+src/detect_single_byte_xor_main.i: src/detect_single_byte_xor_main.cpp.i
+.PHONY : src/detect_single_byte_xor_main.i
+
+# target to preprocess a source file
+src/detect_single_byte_xor_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/detect_single_byte_xor_main.cpp.i
+.PHONY : src/detect_single_byte_xor_main.cpp.i
+
+src/detect_single_byte_xor_main.s: src/detect_single_byte_xor_main.cpp.s
+.PHONY : src/detect_single_byte_xor_main.s
+
+# target to generate assembly for a file
+src/detect_single_byte_xor_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/detect_single_byte_xor_main.cpp.s
+.PHONY : src/detect_single_byte_xor_main.cpp.s
 
 src/fixed_xor.o: src/fixed_xor.cpp.o
 .PHONY : src/fixed_xor.o
@@ -274,6 +400,105 @@ src/hex_to_base64_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hex_to_base64.dir/build.make CMakeFiles/hex_to_base64.dir/src/hex_to_base64_main.cpp.s
 .PHONY : src/hex_to_base64_main.cpp.s
 
+src/repeating_key_xor.o: src/repeating_key_xor.cpp.o
+.PHONY : src/repeating_key_xor.o
+
+# target to build an object file
+src/repeating_key_xor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/repeating_key_xor.dir/build.make CMakeFiles/repeating_key_xor.dir/src/repeating_key_xor.cpp.o
+.PHONY : src/repeating_key_xor.cpp.o
+
+src/repeating_key_xor.i: src/repeating_key_xor.cpp.i
+.PHONY : src/repeating_key_xor.i
+
+# target to preprocess a source file
+src/repeating_key_xor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/repeating_key_xor.dir/build.make CMakeFiles/repeating_key_xor.dir/src/repeating_key_xor.cpp.i
+.PHONY : src/repeating_key_xor.cpp.i
+
+src/repeating_key_xor.s: src/repeating_key_xor.cpp.s
+.PHONY : src/repeating_key_xor.s
+
+# target to generate assembly for a file
+src/repeating_key_xor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/repeating_key_xor.dir/build.make CMakeFiles/repeating_key_xor.dir/src/repeating_key_xor.cpp.s
+.PHONY : src/repeating_key_xor.cpp.s
+
+src/repeating_key_xor_main.o: src/repeating_key_xor_main.cpp.o
+.PHONY : src/repeating_key_xor_main.o
+
+# target to build an object file
+src/repeating_key_xor_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/repeating_key_xor.dir/build.make CMakeFiles/repeating_key_xor.dir/src/repeating_key_xor_main.cpp.o
+.PHONY : src/repeating_key_xor_main.cpp.o
+
+src/repeating_key_xor_main.i: src/repeating_key_xor_main.cpp.i
+.PHONY : src/repeating_key_xor_main.i
+
+# target to preprocess a source file
+src/repeating_key_xor_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/repeating_key_xor.dir/build.make CMakeFiles/repeating_key_xor.dir/src/repeating_key_xor_main.cpp.i
+.PHONY : src/repeating_key_xor_main.cpp.i
+
+src/repeating_key_xor_main.s: src/repeating_key_xor_main.cpp.s
+.PHONY : src/repeating_key_xor_main.s
+
+# target to generate assembly for a file
+src/repeating_key_xor_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/repeating_key_xor.dir/build.make CMakeFiles/repeating_key_xor.dir/src/repeating_key_xor_main.cpp.s
+.PHONY : src/repeating_key_xor_main.cpp.s
+
+src/single_byte_xor.o: src/single_byte_xor.cpp.o
+.PHONY : src/single_byte_xor.o
+
+# target to build an object file
+src/single_byte_xor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_byte_xor.dir/build.make CMakeFiles/single_byte_xor.dir/src/single_byte_xor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/single_byte_xor.cpp.o
+.PHONY : src/single_byte_xor.cpp.o
+
+src/single_byte_xor.i: src/single_byte_xor.cpp.i
+.PHONY : src/single_byte_xor.i
+
+# target to preprocess a source file
+src/single_byte_xor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_byte_xor.dir/build.make CMakeFiles/single_byte_xor.dir/src/single_byte_xor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/single_byte_xor.cpp.i
+.PHONY : src/single_byte_xor.cpp.i
+
+src/single_byte_xor.s: src/single_byte_xor.cpp.s
+.PHONY : src/single_byte_xor.s
+
+# target to generate assembly for a file
+src/single_byte_xor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_byte_xor.dir/build.make CMakeFiles/single_byte_xor.dir/src/single_byte_xor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_single_byte_xor.dir/build.make CMakeFiles/detect_single_byte_xor.dir/src/single_byte_xor.cpp.s
+.PHONY : src/single_byte_xor.cpp.s
+
+src/single_byte_xor_main.o: src/single_byte_xor_main.cpp.o
+.PHONY : src/single_byte_xor_main.o
+
+# target to build an object file
+src/single_byte_xor_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_byte_xor.dir/build.make CMakeFiles/single_byte_xor.dir/src/single_byte_xor_main.cpp.o
+.PHONY : src/single_byte_xor_main.cpp.o
+
+src/single_byte_xor_main.i: src/single_byte_xor_main.cpp.i
+.PHONY : src/single_byte_xor_main.i
+
+# target to preprocess a source file
+src/single_byte_xor_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_byte_xor.dir/build.make CMakeFiles/single_byte_xor.dir/src/single_byte_xor_main.cpp.i
+.PHONY : src/single_byte_xor_main.cpp.i
+
+src/single_byte_xor_main.s: src/single_byte_xor_main.cpp.s
+.PHONY : src/single_byte_xor_main.s
+
+# target to generate assembly for a file
+src/single_byte_xor_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/single_byte_xor.dir/build.make CMakeFiles/single_byte_xor.dir/src/single_byte_xor_main.cpp.s
+.PHONY : src/single_byte_xor_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -283,10 +508,22 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... detect_single_byte_xor"
 	@echo "... fixed_xor"
 	@echo "... hex_to_base64"
+	@echo "... repeating_key_xor"
+	@echo "... run_detect_single_byte_xor_tests"
 	@echo "... run_fixed_xor_tests"
+	@echo "... run_repeating_key_xor_tests"
+	@echo "... run_single_byte_xor_tests"
 	@echo "... run_tests"
+	@echo "... single_byte_xor"
+	@echo "... src/detect_single_byte_xor.o"
+	@echo "... src/detect_single_byte_xor.i"
+	@echo "... src/detect_single_byte_xor.s"
+	@echo "... src/detect_single_byte_xor_main.o"
+	@echo "... src/detect_single_byte_xor_main.i"
+	@echo "... src/detect_single_byte_xor_main.s"
 	@echo "... src/fixed_xor.o"
 	@echo "... src/fixed_xor.i"
 	@echo "... src/fixed_xor.s"
@@ -299,6 +536,18 @@ help:
 	@echo "... src/hex_to_base64_main.o"
 	@echo "... src/hex_to_base64_main.i"
 	@echo "... src/hex_to_base64_main.s"
+	@echo "... src/repeating_key_xor.o"
+	@echo "... src/repeating_key_xor.i"
+	@echo "... src/repeating_key_xor.s"
+	@echo "... src/repeating_key_xor_main.o"
+	@echo "... src/repeating_key_xor_main.i"
+	@echo "... src/repeating_key_xor_main.s"
+	@echo "... src/single_byte_xor.o"
+	@echo "... src/single_byte_xor.i"
+	@echo "... src/single_byte_xor.s"
+	@echo "... src/single_byte_xor_main.o"
+	@echo "... src/single_byte_xor_main.i"
+	@echo "... src/single_byte_xor_main.s"
 .PHONY : help
 
 

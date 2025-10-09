@@ -18,6 +18,23 @@ add_executable(fixed_xor
     src/fixed_xor.cpp
 )
 
+# Ejecutable para Single-byte XOR cipher
+add_executable(single_byte_xor
+    src/single_byte_xor_main.cpp
+    src/single_byte_xor.cpp
+)
+
+# Ejecutable para Detect Single-Byte XOR
+add_executable(detect_single_byte_xor
+    src/detect_single_byte_xor_main.cpp
+    src/detect_single_byte_xor.cpp
+    src/single_byte_xor.cpp
+)
+
+add_executable(repeating_key_xor
+    src/repeating_key_xor.cpp
+    src/repeating_key_xor_main.cpp
+)
 
 # Tests
 enable_testing()

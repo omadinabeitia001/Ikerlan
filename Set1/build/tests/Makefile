@@ -154,6 +154,72 @@ run_fixed_xor_tests/fast:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_fixed_xor_tests.dir/build.make tests/CMakeFiles/run_fixed_xor_tests.dir/build
 .PHONY : run_fixed_xor_tests/fast
 
+# Convenience name for target.
+tests/CMakeFiles/run_single_byte_xor_tests.dir/rule:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_single_byte_xor_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_single_byte_xor_tests.dir/rule
+
+# Convenience name for target.
+run_single_byte_xor_tests: tests/CMakeFiles/run_single_byte_xor_tests.dir/rule
+.PHONY : run_single_byte_xor_tests
+
+# fast build rule for target.
+run_single_byte_xor_tests/fast:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/build
+.PHONY : run_single_byte_xor_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/rule:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/rule
+
+# Convenience name for target.
+run_detect_single_byte_xor_tests: tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/rule
+.PHONY : run_detect_single_byte_xor_tests
+
+# fast build rule for target.
+run_detect_single_byte_xor_tests/fast:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build
+.PHONY : run_detect_single_byte_xor_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_repeating_key_xor_tests.dir/rule:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_repeating_key_xor_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_repeating_key_xor_tests.dir/rule
+
+# Convenience name for target.
+run_repeating_key_xor_tests: tests/CMakeFiles/run_repeating_key_xor_tests.dir/rule
+.PHONY : run_repeating_key_xor_tests
+
+# fast build rule for target.
+run_repeating_key_xor_tests/fast:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/build
+.PHONY : run_repeating_key_xor_tests/fast
+
+__/src/detect_single_byte_xor.o: __/src/detect_single_byte_xor.cpp.o
+.PHONY : __/src/detect_single_byte_xor.o
+
+# target to build an object file
+__/src/detect_single_byte_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/detect_single_byte_xor.cpp.o
+.PHONY : __/src/detect_single_byte_xor.cpp.o
+
+__/src/detect_single_byte_xor.i: __/src/detect_single_byte_xor.cpp.i
+.PHONY : __/src/detect_single_byte_xor.i
+
+# target to preprocess a source file
+__/src/detect_single_byte_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/detect_single_byte_xor.cpp.i
+.PHONY : __/src/detect_single_byte_xor.cpp.i
+
+__/src/detect_single_byte_xor.s: __/src/detect_single_byte_xor.cpp.s
+.PHONY : __/src/detect_single_byte_xor.s
+
+# target to generate assembly for a file
+__/src/detect_single_byte_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/detect_single_byte_xor.cpp.s
+.PHONY : __/src/detect_single_byte_xor.cpp.s
+
 __/src/fixed_xor.o: __/src/fixed_xor.cpp.o
 .PHONY : __/src/fixed_xor.o
 
@@ -201,6 +267,81 @@ __/src/hex_to_base64.s: __/src/hex_to_base64.cpp.s
 __/src/hex_to_base64.cpp.s:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/__/src/hex_to_base64.cpp.s
 .PHONY : __/src/hex_to_base64.cpp.s
+
+__/src/repeating_key_xor.o: __/src/repeating_key_xor.cpp.o
+.PHONY : __/src/repeating_key_xor.o
+
+# target to build an object file
+__/src/repeating_key_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/__/src/repeating_key_xor.cpp.o
+.PHONY : __/src/repeating_key_xor.cpp.o
+
+__/src/repeating_key_xor.i: __/src/repeating_key_xor.cpp.i
+.PHONY : __/src/repeating_key_xor.i
+
+# target to preprocess a source file
+__/src/repeating_key_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/__/src/repeating_key_xor.cpp.i
+.PHONY : __/src/repeating_key_xor.cpp.i
+
+__/src/repeating_key_xor.s: __/src/repeating_key_xor.cpp.s
+.PHONY : __/src/repeating_key_xor.s
+
+# target to generate assembly for a file
+__/src/repeating_key_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/__/src/repeating_key_xor.cpp.s
+.PHONY : __/src/repeating_key_xor.cpp.s
+
+__/src/single_byte_xor.o: __/src/single_byte_xor.cpp.o
+.PHONY : __/src/single_byte_xor.o
+
+# target to build an object file
+__/src/single_byte_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.o
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.o
+.PHONY : __/src/single_byte_xor.cpp.o
+
+__/src/single_byte_xor.i: __/src/single_byte_xor.cpp.i
+.PHONY : __/src/single_byte_xor.i
+
+# target to preprocess a source file
+__/src/single_byte_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.i
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.i
+.PHONY : __/src/single_byte_xor.cpp.i
+
+__/src/single_byte_xor.s: __/src/single_byte_xor.cpp.s
+.PHONY : __/src/single_byte_xor.s
+
+# target to generate assembly for a file
+__/src/single_byte_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.s
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/__/src/single_byte_xor.cpp.s
+.PHONY : __/src/single_byte_xor.cpp.s
+
+test_detect_single_byte_xor.o: test_detect_single_byte_xor.cpp.o
+.PHONY : test_detect_single_byte_xor.o
+
+# target to build an object file
+test_detect_single_byte_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/test_detect_single_byte_xor.cpp.o
+.PHONY : test_detect_single_byte_xor.cpp.o
+
+test_detect_single_byte_xor.i: test_detect_single_byte_xor.cpp.i
+.PHONY : test_detect_single_byte_xor.i
+
+# target to preprocess a source file
+test_detect_single_byte_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/test_detect_single_byte_xor.cpp.i
+.PHONY : test_detect_single_byte_xor.cpp.i
+
+test_detect_single_byte_xor.s: test_detect_single_byte_xor.cpp.s
+.PHONY : test_detect_single_byte_xor.s
+
+# target to generate assembly for a file
+test_detect_single_byte_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_detect_single_byte_xor_tests.dir/test_detect_single_byte_xor.cpp.s
+.PHONY : test_detect_single_byte_xor.cpp.s
 
 test_fixed_xor.o: test_fixed_xor.cpp.o
 .PHONY : test_fixed_xor.o
@@ -250,6 +391,54 @@ test_hex_to_base64.cpp.s:
 	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_tests.dir/build.make tests/CMakeFiles/run_tests.dir/test_hex_to_base64.cpp.s
 .PHONY : test_hex_to_base64.cpp.s
 
+test_repeating_key_xor.o: test_repeating_key_xor.cpp.o
+.PHONY : test_repeating_key_xor.o
+
+# target to build an object file
+test_repeating_key_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/test_repeating_key_xor.cpp.o
+.PHONY : test_repeating_key_xor.cpp.o
+
+test_repeating_key_xor.i: test_repeating_key_xor.cpp.i
+.PHONY : test_repeating_key_xor.i
+
+# target to preprocess a source file
+test_repeating_key_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/test_repeating_key_xor.cpp.i
+.PHONY : test_repeating_key_xor.cpp.i
+
+test_repeating_key_xor.s: test_repeating_key_xor.cpp.s
+.PHONY : test_repeating_key_xor.s
+
+# target to generate assembly for a file
+test_repeating_key_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_repeating_key_xor_tests.dir/test_repeating_key_xor.cpp.s
+.PHONY : test_repeating_key_xor.cpp.s
+
+test_single_byte_xor.o: test_single_byte_xor.cpp.o
+.PHONY : test_single_byte_xor.o
+
+# target to build an object file
+test_single_byte_xor.cpp.o:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/test_single_byte_xor.cpp.o
+.PHONY : test_single_byte_xor.cpp.o
+
+test_single_byte_xor.i: test_single_byte_xor.cpp.i
+.PHONY : test_single_byte_xor.i
+
+# target to preprocess a source file
+test_single_byte_xor.cpp.i:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/test_single_byte_xor.cpp.i
+.PHONY : test_single_byte_xor.cpp.i
+
+test_single_byte_xor.s: test_single_byte_xor.cpp.s
+.PHONY : test_single_byte_xor.s
+
+# target to generate assembly for a file
+test_single_byte_xor.cpp.s:
+	cd /home/student/Ikerlan/Set1/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_single_byte_xor_tests.dir/build.make tests/CMakeFiles/run_single_byte_xor_tests.dir/test_single_byte_xor.cpp.s
+.PHONY : test_single_byte_xor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,20 +448,41 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... run_detect_single_byte_xor_tests"
 	@echo "... run_fixed_xor_tests"
+	@echo "... run_repeating_key_xor_tests"
+	@echo "... run_single_byte_xor_tests"
 	@echo "... run_tests"
+	@echo "... __/src/detect_single_byte_xor.o"
+	@echo "... __/src/detect_single_byte_xor.i"
+	@echo "... __/src/detect_single_byte_xor.s"
 	@echo "... __/src/fixed_xor.o"
 	@echo "... __/src/fixed_xor.i"
 	@echo "... __/src/fixed_xor.s"
 	@echo "... __/src/hex_to_base64.o"
 	@echo "... __/src/hex_to_base64.i"
 	@echo "... __/src/hex_to_base64.s"
+	@echo "... __/src/repeating_key_xor.o"
+	@echo "... __/src/repeating_key_xor.i"
+	@echo "... __/src/repeating_key_xor.s"
+	@echo "... __/src/single_byte_xor.o"
+	@echo "... __/src/single_byte_xor.i"
+	@echo "... __/src/single_byte_xor.s"
+	@echo "... test_detect_single_byte_xor.o"
+	@echo "... test_detect_single_byte_xor.i"
+	@echo "... test_detect_single_byte_xor.s"
 	@echo "... test_fixed_xor.o"
 	@echo "... test_fixed_xor.i"
 	@echo "... test_fixed_xor.s"
 	@echo "... test_hex_to_base64.o"
 	@echo "... test_hex_to_base64.i"
 	@echo "... test_hex_to_base64.s"
+	@echo "... test_repeating_key_xor.o"
+	@echo "... test_repeating_key_xor.i"
+	@echo "... test_repeating_key_xor.s"
+	@echo "... test_single_byte_xor.o"
+	@echo "... test_single_byte_xor.i"
+	@echo "... test_single_byte_xor.s"
 .PHONY : help
 
 
