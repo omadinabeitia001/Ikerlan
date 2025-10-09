@@ -16,16 +16,20 @@ std::vector<uint8_t> hexToBytes(const std::string& hex) {
 double scoreEnglish(const std::string& text) {
     double score = 0.0;
     for (char c : text) {
+        if (!std::isprint(c)) {
+            score -= 5.0;
+            continue;
+        }
         c = std::tolower(c);
         if (std::isalpha(c)) score += 1.0;
-        if (c == ' ') score += 1.5;
-        if (c == 'e') score += 2.0;
+        if (c == ' ') score += 2.0;
+        if (c == 'e' || c == 't' || c == 'a' || c == 'o' || c == 'i' || c == 'n') score += 1.5;
     }
     return score;
+
 }
 
-SingleByteXORResult breakSingleByteXOR(const std::string& hex) {
-    auto bytes = hexToBytes(hex);
+SingleByteXORResult breakSingleByteXOR(const std::vector<uint8_t>& bytes) {
     double bestScore = -1.0;
     std::string bestText;
     uint8_t bestKey = 0;
@@ -45,3 +49,5 @@ SingleByteXORResult breakSingleByteXOR(const std::string& hex) {
 
     return {bestKey, bestText};
 }
+
+

@@ -140,6 +140,8 @@ break_repeating_key_xor: CMakeFiles/break_repeating_key_xor.dir/src/hamming_dist
 break_repeating_key_xor: CMakeFiles/break_repeating_key_xor.dir/src/break_repeating_key_xor_main.cpp.o
 break_repeating_key_xor: CMakeFiles/break_repeating_key_xor.dir/src/single_byte_xor.cpp.o
 break_repeating_key_xor: CMakeFiles/break_repeating_key_xor.dir/build.make
+break_repeating_key_xor: /usr/lib/x86_64-linux-gnu/libssl.so
+break_repeating_key_xor: /usr/lib/x86_64-linux-gnu/libcrypto.so
 break_repeating_key_xor: CMakeFiles/break_repeating_key_xor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Ikerlan/Set1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable break_repeating_key_xor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/break_repeating_key_xor.dir/link.txt --verbose=$(VERBOSE)

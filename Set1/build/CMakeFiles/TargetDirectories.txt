@@ -4,6 +4,8 @@
 /home/student/Ikerlan/Set1/build/CMakeFiles/detect_single_byte_xor.dir
 /home/student/Ikerlan/Set1/build/CMakeFiles/repeating_key_xor.dir
 /home/student/Ikerlan/Set1/build/CMakeFiles/break_repeating_key_xor.dir
+/home/student/Ikerlan/Set1/build/CMakeFiles/aes_ecb_decrypt.dir
+/home/student/Ikerlan/Set1/build/CMakeFiles/detect_ecb.dir
 /home/student/Ikerlan/Set1/build/CMakeFiles/test.dir
 /home/student/Ikerlan/Set1/build/CMakeFiles/edit_cache.dir
 /home/student/Ikerlan/Set1/build/CMakeFiles/rebuild_cache.dir
@@ -14,6 +16,8 @@
 /home/student/Ikerlan/Set1/build/tests/CMakeFiles/run_repeating_key_xor_tests.dir
 /home/student/Ikerlan/Set1/build/tests/CMakeFiles/run_hamming_distance_tests.dir
 /home/student/Ikerlan/Set1/build/tests/CMakeFiles/run_break_repeating_key_xor_tests.dir
+/home/student/Ikerlan/Set1/build/tests/CMakeFiles/run_aes_ecb_tests.dir
+/home/student/Ikerlan/Set1/build/tests/CMakeFiles/run_detect_ecb_tests.dir
 /home/student/Ikerlan/Set1/build/tests/CMakeFiles/test.dir
 /home/student/Ikerlan/Set1/build/tests/CMakeFiles/edit_cache.dir
 /home/student/Ikerlan/Set1/build/tests/CMakeFiles/rebuild_cache.dir

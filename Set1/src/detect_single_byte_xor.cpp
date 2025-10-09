@@ -6,7 +6,8 @@ DetectionResult detectSingleByteXOR(const std::vector<std::string>& lines) {
     DetectionResult bestResult;
 
     for (const auto& line : lines) {
-        auto result = breakSingleByteXOR(line);
+        std::vector<uint8_t> bytes(line.begin(), line.end());
+        auto result = breakSingleByteXOR(bytes);
         double score = scoreEnglish(result.plaintext);
         if (score > bestScore) {
             bestScore = score;

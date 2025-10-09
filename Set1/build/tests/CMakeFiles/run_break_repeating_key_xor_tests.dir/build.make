@@ -141,6 +141,8 @@ tests/run_break_repeating_key_xor_tests: tests/CMakeFiles/run_break_repeating_ke
 tests/run_break_repeating_key_xor_tests: tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/__/src/single_byte_xor.cpp.o
 tests/run_break_repeating_key_xor_tests: tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make
 tests/run_break_repeating_key_xor_tests: /usr/lib/x86_64-linux-gnu/libgtest_main.a
+tests/run_break_repeating_key_xor_tests: /usr/lib/x86_64-linux-gnu/libssl.so
+tests/run_break_repeating_key_xor_tests: /usr/lib/x86_64-linux-gnu/libcrypto.so
 tests/run_break_repeating_key_xor_tests: /usr/lib/x86_64-linux-gnu/libgtest.a
 tests/run_break_repeating_key_xor_tests: tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Ikerlan/Set1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable run_break_repeating_key_xor_tests"

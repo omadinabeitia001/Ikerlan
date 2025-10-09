@@ -36,12 +36,33 @@ add_executable(repeating_key_xor
     src/repeating_key_xor_main.cpp
 )
 
+find_package(OpenSSL REQUIRED)
+
 add_executable(break_repeating_key_xor
     src/break_repeating_key_xor.cpp
     src/hamming_distance.cpp
     src/break_repeating_key_xor_main.cpp
     src/single_byte_xor.cpp
 )
+
+target_include_directories(break_repeating_key_xor PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(break_repeating_key_xor PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+
+# Ejecutable para AES-ECB
+add_executable(aes_ecb_decrypt
+    src/aes_ecb.cpp
+    src/aes_ecb_main.cpp
+)
+
+target_include_directories(aes_ecb_decrypt PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(aes_ecb_decrypt PRIVATE OpenSSL::SSL OpenSSL::Crypto)
+
+# Ejecutable para Detect ECB
+add_executable(detect_ecb
+    src/detect_ecb_main.cpp
+)
+
+target_include_directories(detect_ecb PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
 
 # Tests

@@ -205,6 +205,32 @@ break_repeating_key_xor/fast:
 .PHONY : break_repeating_key_xor/fast
 
 #=============================================================================
+# Target rules for targets named aes_ecb_decrypt
+
+# Build rule for target.
+aes_ecb_decrypt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aes_ecb_decrypt
+.PHONY : aes_ecb_decrypt
+
+# fast build rule for target.
+aes_ecb_decrypt/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb_decrypt.dir/build.make CMakeFiles/aes_ecb_decrypt.dir/build
+.PHONY : aes_ecb_decrypt/fast
+
+#=============================================================================
+# Target rules for targets named detect_ecb
+
+# Build rule for target.
+detect_ecb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detect_ecb
+.PHONY : detect_ecb
+
+# fast build rule for target.
+detect_ecb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_ecb.dir/build.make CMakeFiles/detect_ecb.dir/build
+.PHONY : detect_ecb/fast
+
+#=============================================================================
 # Target rules for targets named run_tests
 
 # Build rule for target.
@@ -295,6 +321,80 @@ run_break_repeating_key_xor_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build.make tests/CMakeFiles/run_break_repeating_key_xor_tests.dir/build
 .PHONY : run_break_repeating_key_xor_tests/fast
 
+#=============================================================================
+# Target rules for targets named run_aes_ecb_tests
+
+# Build rule for target.
+run_aes_ecb_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_aes_ecb_tests
+.PHONY : run_aes_ecb_tests
+
+# fast build rule for target.
+run_aes_ecb_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_aes_ecb_tests.dir/build.make tests/CMakeFiles/run_aes_ecb_tests.dir/build
+.PHONY : run_aes_ecb_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_detect_ecb_tests
+
+# Build rule for target.
+run_detect_ecb_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_detect_ecb_tests
+.PHONY : run_detect_ecb_tests
+
+# fast build rule for target.
+run_detect_ecb_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_detect_ecb_tests.dir/build.make tests/CMakeFiles/run_detect_ecb_tests.dir/build
+.PHONY : run_detect_ecb_tests/fast
+
+src/aes_ecb.o: src/aes_ecb.cpp.o
+.PHONY : src/aes_ecb.o
+
+# target to build an object file
+src/aes_ecb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb_decrypt.dir/build.make CMakeFiles/aes_ecb_decrypt.dir/src/aes_ecb.cpp.o
+.PHONY : src/aes_ecb.cpp.o
+
+src/aes_ecb.i: src/aes_ecb.cpp.i
+.PHONY : src/aes_ecb.i
+
+# target to preprocess a source file
+src/aes_ecb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb_decrypt.dir/build.make CMakeFiles/aes_ecb_decrypt.dir/src/aes_ecb.cpp.i
+.PHONY : src/aes_ecb.cpp.i
+
+src/aes_ecb.s: src/aes_ecb.cpp.s
+.PHONY : src/aes_ecb.s
+
+# target to generate assembly for a file
+src/aes_ecb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb_decrypt.dir/build.make CMakeFiles/aes_ecb_decrypt.dir/src/aes_ecb.cpp.s
+.PHONY : src/aes_ecb.cpp.s
+
+src/aes_ecb_main.o: src/aes_ecb_main.cpp.o
+.PHONY : src/aes_ecb_main.o
+
+# target to build an object file
+src/aes_ecb_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb_decrypt.dir/build.make CMakeFiles/aes_ecb_decrypt.dir/src/aes_ecb_main.cpp.o
+.PHONY : src/aes_ecb_main.cpp.o
+
+src/aes_ecb_main.i: src/aes_ecb_main.cpp.i
+.PHONY : src/aes_ecb_main.i
+
+# target to preprocess a source file
+src/aes_ecb_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb_decrypt.dir/build.make CMakeFiles/aes_ecb_decrypt.dir/src/aes_ecb_main.cpp.i
+.PHONY : src/aes_ecb_main.cpp.i
+
+src/aes_ecb_main.s: src/aes_ecb_main.cpp.s
+.PHONY : src/aes_ecb_main.s
+
+# target to generate assembly for a file
+src/aes_ecb_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb_decrypt.dir/build.make CMakeFiles/aes_ecb_decrypt.dir/src/aes_ecb_main.cpp.s
+.PHONY : src/aes_ecb_main.cpp.s
+
 src/break_repeating_key_xor.o: src/break_repeating_key_xor.cpp.o
 .PHONY : src/break_repeating_key_xor.o
 
@@ -342,6 +442,30 @@ src/break_repeating_key_xor_main.s: src/break_repeating_key_xor_main.cpp.s
 src/break_repeating_key_xor_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/break_repeating_key_xor.dir/build.make CMakeFiles/break_repeating_key_xor.dir/src/break_repeating_key_xor_main.cpp.s
 .PHONY : src/break_repeating_key_xor_main.cpp.s
+
+src/detect_ecb_main.o: src/detect_ecb_main.cpp.o
+.PHONY : src/detect_ecb_main.o
+
+# target to build an object file
+src/detect_ecb_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_ecb.dir/build.make CMakeFiles/detect_ecb.dir/src/detect_ecb_main.cpp.o
+.PHONY : src/detect_ecb_main.cpp.o
+
+src/detect_ecb_main.i: src/detect_ecb_main.cpp.i
+.PHONY : src/detect_ecb_main.i
+
+# target to preprocess a source file
+src/detect_ecb_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_ecb.dir/build.make CMakeFiles/detect_ecb.dir/src/detect_ecb_main.cpp.i
+.PHONY : src/detect_ecb_main.cpp.i
+
+src/detect_ecb_main.s: src/detect_ecb_main.cpp.s
+.PHONY : src/detect_ecb_main.s
+
+# target to generate assembly for a file
+src/detect_ecb_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detect_ecb.dir/build.make CMakeFiles/detect_ecb.dir/src/detect_ecb_main.cpp.s
+.PHONY : src/detect_ecb_main.cpp.s
 
 src/detect_single_byte_xor.o: src/detect_single_byte_xor.cpp.o
 .PHONY : src/detect_single_byte_xor.o
@@ -622,12 +746,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... aes_ecb_decrypt"
 	@echo "... break_repeating_key_xor"
+	@echo "... detect_ecb"
 	@echo "... detect_single_byte_xor"
 	@echo "... fixed_xor"
 	@echo "... hex_to_base64"
 	@echo "... repeating_key_xor"
+	@echo "... run_aes_ecb_tests"
 	@echo "... run_break_repeating_key_xor_tests"
+	@echo "... run_detect_ecb_tests"
 	@echo "... run_detect_single_byte_xor_tests"
 	@echo "... run_fixed_xor_tests"
 	@echo "... run_hamming_distance_tests"
@@ -635,12 +763,21 @@ help:
 	@echo "... run_single_byte_xor_tests"
 	@echo "... run_tests"
 	@echo "... single_byte_xor"
+	@echo "... src/aes_ecb.o"
+	@echo "... src/aes_ecb.i"
+	@echo "... src/aes_ecb.s"
+	@echo "... src/aes_ecb_main.o"
+	@echo "... src/aes_ecb_main.i"
+	@echo "... src/aes_ecb_main.s"
 	@echo "... src/break_repeating_key_xor.o"
 	@echo "... src/break_repeating_key_xor.i"
 	@echo "... src/break_repeating_key_xor.s"
 	@echo "... src/break_repeating_key_xor_main.o"
 	@echo "... src/break_repeating_key_xor_main.i"
 	@echo "... src/break_repeating_key_xor_main.s"
+	@echo "... src/detect_ecb_main.o"
+	@echo "... src/detect_ecb_main.i"
+	@echo "... src/detect_ecb_main.s"
 	@echo "... src/detect_single_byte_xor.o"
 	@echo "... src/detect_single_byte_xor.i"
 	@echo "... src/detect_single_byte_xor.s"
