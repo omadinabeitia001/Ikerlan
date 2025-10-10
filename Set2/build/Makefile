@@ -205,6 +205,97 @@ oracle/fast:
 .PHONY : oracle/fast
 
 #=============================================================================
+# Target rules for targets named utils
+
+# Build rule for target.
+utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils
+.PHONY : utils
+
+# fast build rule for target.
+utils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
+.PHONY : utils/fast
+
+#=============================================================================
+# Target rules for targets named byte_ecb
+
+# Build rule for target.
+byte_ecb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 byte_ecb
+.PHONY : byte_ecb
+
+# fast build rule for target.
+byte_ecb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb.dir/build.make CMakeFiles/byte_ecb.dir/build
+.PHONY : byte_ecb/fast
+
+#=============================================================================
+# Target rules for targets named ecb_cut
+
+# Build rule for target.
+ecb_cut: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ecb_cut
+.PHONY : ecb_cut
+
+# fast build rule for target.
+ecb_cut/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut.dir/build.make CMakeFiles/ecb_cut.dir/build
+.PHONY : ecb_cut/fast
+
+#=============================================================================
+# Target rules for targets named byte_ecb_hard
+
+# Build rule for target.
+byte_ecb_hard: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 byte_ecb_hard
+.PHONY : byte_ecb_hard
+
+# fast build rule for target.
+byte_ecb_hard/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard.dir/build.make CMakeFiles/byte_ecb_hard.dir/build
+.PHONY : byte_ecb_hard/fast
+
+#=============================================================================
+# Target rules for targets named pkcs7_val
+
+# Build rule for target.
+pkcs7_val: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pkcs7_val
+.PHONY : pkcs7_val
+
+# fast build rule for target.
+pkcs7_val/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val.dir/build.make CMakeFiles/pkcs7_val.dir/build
+.PHONY : pkcs7_val/fast
+
+#=============================================================================
+# Target rules for targets named aes_cbc
+
+# Build rule for target.
+aes_cbc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 aes_cbc
+.PHONY : aes_cbc
+
+# fast build rule for target.
+aes_cbc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_cbc.dir/build.make CMakeFiles/aes_cbc.dir/build
+.PHONY : aes_cbc/fast
+
+#=============================================================================
+# Target rules for targets named cbc_bitflip
+
+# Build rule for target.
+cbc_bitflip: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cbc_bitflip
+.PHONY : cbc_bitflip
+
+# fast build rule for target.
+cbc_bitflip/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip.dir/build.make CMakeFiles/cbc_bitflip.dir/build
+.PHONY : cbc_bitflip/fast
+
+#=============================================================================
 # Target rules for targets named pkcs7_main
 
 # Build rule for target.
@@ -244,6 +335,71 @@ oracle_main/fast:
 .PHONY : oracle_main/fast
 
 #=============================================================================
+# Target rules for targets named byte_ecb_main
+
+# Build rule for target.
+byte_ecb_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 byte_ecb_main
+.PHONY : byte_ecb_main
+
+# fast build rule for target.
+byte_ecb_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_main.dir/build.make CMakeFiles/byte_ecb_main.dir/build
+.PHONY : byte_ecb_main/fast
+
+#=============================================================================
+# Target rules for targets named ecb_cut_main
+
+# Build rule for target.
+ecb_cut_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ecb_cut_main
+.PHONY : ecb_cut_main
+
+# fast build rule for target.
+ecb_cut_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut_main.dir/build.make CMakeFiles/ecb_cut_main.dir/build
+.PHONY : ecb_cut_main/fast
+
+#=============================================================================
+# Target rules for targets named byte_ecb_hard_main
+
+# Build rule for target.
+byte_ecb_hard_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 byte_ecb_hard_main
+.PHONY : byte_ecb_hard_main
+
+# fast build rule for target.
+byte_ecb_hard_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard_main.dir/build.make CMakeFiles/byte_ecb_hard_main.dir/build
+.PHONY : byte_ecb_hard_main/fast
+
+#=============================================================================
+# Target rules for targets named pkcs7_val_main
+
+# Build rule for target.
+pkcs7_val_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pkcs7_val_main
+.PHONY : pkcs7_val_main
+
+# fast build rule for target.
+pkcs7_val_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val_main.dir/build.make CMakeFiles/pkcs7_val_main.dir/build
+.PHONY : pkcs7_val_main/fast
+
+#=============================================================================
+# Target rules for targets named cbc_bitflip_main
+
+# Build rule for target.
+cbc_bitflip_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cbc_bitflip_main
+.PHONY : cbc_bitflip_main
+
+# fast build rule for target.
+cbc_bitflip_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip_main.dir/build.make CMakeFiles/cbc_bitflip_main.dir/build
+.PHONY : cbc_bitflip_main/fast
+
+#=============================================================================
 # Target rules for targets named run_pkcs7_tests
 
 # Build rule for target.
@@ -281,6 +437,95 @@ run_oracle_tests: cmake_check_build_system
 run_oracle_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_oracle_tests.dir/build.make tests/CMakeFiles/run_oracle_tests.dir/build
 .PHONY : run_oracle_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_byte_ecb_tests
+
+# Build rule for target.
+run_byte_ecb_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_byte_ecb_tests
+.PHONY : run_byte_ecb_tests
+
+# fast build rule for target.
+run_byte_ecb_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/build
+.PHONY : run_byte_ecb_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_ecb_cut_tests
+
+# Build rule for target.
+run_ecb_cut_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_ecb_cut_tests
+.PHONY : run_ecb_cut_tests
+
+# fast build rule for target.
+run_ecb_cut_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/build
+.PHONY : run_ecb_cut_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_byte_ecb_hard_tests
+
+# Build rule for target.
+run_byte_ecb_hard_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_byte_ecb_hard_tests
+.PHONY : run_byte_ecb_hard_tests
+
+# fast build rule for target.
+run_byte_ecb_hard_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build
+.PHONY : run_byte_ecb_hard_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_pkcs7_val_tests
+
+# Build rule for target.
+run_pkcs7_val_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_pkcs7_val_tests
+.PHONY : run_pkcs7_val_tests
+
+# fast build rule for target.
+run_pkcs7_val_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/build
+.PHONY : run_pkcs7_val_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_cbc_bitflip_tests
+
+# Build rule for target.
+run_cbc_bitflip_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_cbc_bitflip_tests
+.PHONY : run_cbc_bitflip_tests
+
+# fast build rule for target.
+run_cbc_bitflip_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/build
+.PHONY : run_cbc_bitflip_tests/fast
+
+src/aes_cbc.o: src/aes_cbc.cpp.o
+.PHONY : src/aes_cbc.o
+
+# target to build an object file
+src/aes_cbc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_cbc.dir/build.make CMakeFiles/aes_cbc.dir/src/aes_cbc.cpp.o
+.PHONY : src/aes_cbc.cpp.o
+
+src/aes_cbc.i: src/aes_cbc.cpp.i
+.PHONY : src/aes_cbc.i
+
+# target to preprocess a source file
+src/aes_cbc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_cbc.dir/build.make CMakeFiles/aes_cbc.dir/src/aes_cbc.cpp.i
+.PHONY : src/aes_cbc.cpp.i
+
+src/aes_cbc.s: src/aes_cbc.cpp.s
+.PHONY : src/aes_cbc.s
+
+# target to generate assembly for a file
+src/aes_cbc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_cbc.dir/build.make CMakeFiles/aes_cbc.dir/src/aes_cbc.cpp.s
+.PHONY : src/aes_cbc.cpp.s
 
 src/aes_ecb.o: src/aes_ecb.cpp.o
 .PHONY : src/aes_ecb.o
@@ -330,6 +575,102 @@ src/base64.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base64.dir/build.make CMakeFiles/base64.dir/src/base64.cpp.s
 .PHONY : src/base64.cpp.s
 
+src/byte_ecb.o: src/byte_ecb.cpp.o
+.PHONY : src/byte_ecb.o
+
+# target to build an object file
+src/byte_ecb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb.dir/build.make CMakeFiles/byte_ecb.dir/src/byte_ecb.cpp.o
+.PHONY : src/byte_ecb.cpp.o
+
+src/byte_ecb.i: src/byte_ecb.cpp.i
+.PHONY : src/byte_ecb.i
+
+# target to preprocess a source file
+src/byte_ecb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb.dir/build.make CMakeFiles/byte_ecb.dir/src/byte_ecb.cpp.i
+.PHONY : src/byte_ecb.cpp.i
+
+src/byte_ecb.s: src/byte_ecb.cpp.s
+.PHONY : src/byte_ecb.s
+
+# target to generate assembly for a file
+src/byte_ecb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb.dir/build.make CMakeFiles/byte_ecb.dir/src/byte_ecb.cpp.s
+.PHONY : src/byte_ecb.cpp.s
+
+src/byte_ecb_hard.o: src/byte_ecb_hard.cpp.o
+.PHONY : src/byte_ecb_hard.o
+
+# target to build an object file
+src/byte_ecb_hard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard.dir/build.make CMakeFiles/byte_ecb_hard.dir/src/byte_ecb_hard.cpp.o
+.PHONY : src/byte_ecb_hard.cpp.o
+
+src/byte_ecb_hard.i: src/byte_ecb_hard.cpp.i
+.PHONY : src/byte_ecb_hard.i
+
+# target to preprocess a source file
+src/byte_ecb_hard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard.dir/build.make CMakeFiles/byte_ecb_hard.dir/src/byte_ecb_hard.cpp.i
+.PHONY : src/byte_ecb_hard.cpp.i
+
+src/byte_ecb_hard.s: src/byte_ecb_hard.cpp.s
+.PHONY : src/byte_ecb_hard.s
+
+# target to generate assembly for a file
+src/byte_ecb_hard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard.dir/build.make CMakeFiles/byte_ecb_hard.dir/src/byte_ecb_hard.cpp.s
+.PHONY : src/byte_ecb_hard.cpp.s
+
+src/byte_ecb_hard_main.o: src/byte_ecb_hard_main.cpp.o
+.PHONY : src/byte_ecb_hard_main.o
+
+# target to build an object file
+src/byte_ecb_hard_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard_main.dir/build.make CMakeFiles/byte_ecb_hard_main.dir/src/byte_ecb_hard_main.cpp.o
+.PHONY : src/byte_ecb_hard_main.cpp.o
+
+src/byte_ecb_hard_main.i: src/byte_ecb_hard_main.cpp.i
+.PHONY : src/byte_ecb_hard_main.i
+
+# target to preprocess a source file
+src/byte_ecb_hard_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard_main.dir/build.make CMakeFiles/byte_ecb_hard_main.dir/src/byte_ecb_hard_main.cpp.i
+.PHONY : src/byte_ecb_hard_main.cpp.i
+
+src/byte_ecb_hard_main.s: src/byte_ecb_hard_main.cpp.s
+.PHONY : src/byte_ecb_hard_main.s
+
+# target to generate assembly for a file
+src/byte_ecb_hard_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard_main.dir/build.make CMakeFiles/byte_ecb_hard_main.dir/src/byte_ecb_hard_main.cpp.s
+.PHONY : src/byte_ecb_hard_main.cpp.s
+
+src/byte_ecb_main.o: src/byte_ecb_main.cpp.o
+.PHONY : src/byte_ecb_main.o
+
+# target to build an object file
+src/byte_ecb_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_main.dir/build.make CMakeFiles/byte_ecb_main.dir/src/byte_ecb_main.cpp.o
+.PHONY : src/byte_ecb_main.cpp.o
+
+src/byte_ecb_main.i: src/byte_ecb_main.cpp.i
+.PHONY : src/byte_ecb_main.i
+
+# target to preprocess a source file
+src/byte_ecb_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_main.dir/build.make CMakeFiles/byte_ecb_main.dir/src/byte_ecb_main.cpp.i
+.PHONY : src/byte_ecb_main.cpp.i
+
+src/byte_ecb_main.s: src/byte_ecb_main.cpp.s
+.PHONY : src/byte_ecb_main.s
+
+# target to generate assembly for a file
+src/byte_ecb_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_main.dir/build.make CMakeFiles/byte_ecb_main.dir/src/byte_ecb_main.cpp.s
+.PHONY : src/byte_ecb_main.cpp.s
+
 src/cbc.o: src/cbc.cpp.o
 .PHONY : src/cbc.o
 
@@ -354,6 +695,54 @@ src/cbc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc.dir/build.make CMakeFiles/cbc.dir/src/cbc.cpp.s
 .PHONY : src/cbc.cpp.s
 
+src/cbc_bitflip.o: src/cbc_bitflip.cpp.o
+.PHONY : src/cbc_bitflip.o
+
+# target to build an object file
+src/cbc_bitflip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip.dir/build.make CMakeFiles/cbc_bitflip.dir/src/cbc_bitflip.cpp.o
+.PHONY : src/cbc_bitflip.cpp.o
+
+src/cbc_bitflip.i: src/cbc_bitflip.cpp.i
+.PHONY : src/cbc_bitflip.i
+
+# target to preprocess a source file
+src/cbc_bitflip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip.dir/build.make CMakeFiles/cbc_bitflip.dir/src/cbc_bitflip.cpp.i
+.PHONY : src/cbc_bitflip.cpp.i
+
+src/cbc_bitflip.s: src/cbc_bitflip.cpp.s
+.PHONY : src/cbc_bitflip.s
+
+# target to generate assembly for a file
+src/cbc_bitflip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip.dir/build.make CMakeFiles/cbc_bitflip.dir/src/cbc_bitflip.cpp.s
+.PHONY : src/cbc_bitflip.cpp.s
+
+src/cbc_bitflip_main.o: src/cbc_bitflip_main.cpp.o
+.PHONY : src/cbc_bitflip_main.o
+
+# target to build an object file
+src/cbc_bitflip_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip_main.dir/build.make CMakeFiles/cbc_bitflip_main.dir/src/cbc_bitflip_main.cpp.o
+.PHONY : src/cbc_bitflip_main.cpp.o
+
+src/cbc_bitflip_main.i: src/cbc_bitflip_main.cpp.i
+.PHONY : src/cbc_bitflip_main.i
+
+# target to preprocess a source file
+src/cbc_bitflip_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip_main.dir/build.make CMakeFiles/cbc_bitflip_main.dir/src/cbc_bitflip_main.cpp.i
+.PHONY : src/cbc_bitflip_main.cpp.i
+
+src/cbc_bitflip_main.s: src/cbc_bitflip_main.cpp.s
+.PHONY : src/cbc_bitflip_main.s
+
+# target to generate assembly for a file
+src/cbc_bitflip_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip_main.dir/build.make CMakeFiles/cbc_bitflip_main.dir/src/cbc_bitflip_main.cpp.s
+.PHONY : src/cbc_bitflip_main.cpp.s
+
 src/cbc_main.o: src/cbc_main.cpp.o
 .PHONY : src/cbc_main.o
 
@@ -377,6 +766,54 @@ src/cbc_main.s: src/cbc_main.cpp.s
 src/cbc_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_main.dir/build.make CMakeFiles/cbc_main.dir/src/cbc_main.cpp.s
 .PHONY : src/cbc_main.cpp.s
+
+src/ecb_cut.o: src/ecb_cut.cpp.o
+.PHONY : src/ecb_cut.o
+
+# target to build an object file
+src/ecb_cut.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut.dir/build.make CMakeFiles/ecb_cut.dir/src/ecb_cut.cpp.o
+.PHONY : src/ecb_cut.cpp.o
+
+src/ecb_cut.i: src/ecb_cut.cpp.i
+.PHONY : src/ecb_cut.i
+
+# target to preprocess a source file
+src/ecb_cut.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut.dir/build.make CMakeFiles/ecb_cut.dir/src/ecb_cut.cpp.i
+.PHONY : src/ecb_cut.cpp.i
+
+src/ecb_cut.s: src/ecb_cut.cpp.s
+.PHONY : src/ecb_cut.s
+
+# target to generate assembly for a file
+src/ecb_cut.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut.dir/build.make CMakeFiles/ecb_cut.dir/src/ecb_cut.cpp.s
+.PHONY : src/ecb_cut.cpp.s
+
+src/ecb_cut_main.o: src/ecb_cut_main.cpp.o
+.PHONY : src/ecb_cut_main.o
+
+# target to build an object file
+src/ecb_cut_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut_main.dir/build.make CMakeFiles/ecb_cut_main.dir/src/ecb_cut_main.cpp.o
+.PHONY : src/ecb_cut_main.cpp.o
+
+src/ecb_cut_main.i: src/ecb_cut_main.cpp.i
+.PHONY : src/ecb_cut_main.i
+
+# target to preprocess a source file
+src/ecb_cut_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut_main.dir/build.make CMakeFiles/ecb_cut_main.dir/src/ecb_cut_main.cpp.i
+.PHONY : src/ecb_cut_main.cpp.i
+
+src/ecb_cut_main.s: src/ecb_cut_main.cpp.s
+.PHONY : src/ecb_cut_main.s
+
+# target to generate assembly for a file
+src/ecb_cut_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut_main.dir/build.make CMakeFiles/ecb_cut_main.dir/src/ecb_cut_main.cpp.s
+.PHONY : src/ecb_cut_main.cpp.s
 
 src/oracle.o: src/oracle.cpp.o
 .PHONY : src/oracle.o
@@ -474,6 +911,78 @@ src/pkcs7_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_main.dir/build.make CMakeFiles/pkcs7_main.dir/src/pkcs7_main.cpp.s
 .PHONY : src/pkcs7_main.cpp.s
 
+src/pkcs7_val.o: src/pkcs7_val.cpp.o
+.PHONY : src/pkcs7_val.o
+
+# target to build an object file
+src/pkcs7_val.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val.dir/build.make CMakeFiles/pkcs7_val.dir/src/pkcs7_val.cpp.o
+.PHONY : src/pkcs7_val.cpp.o
+
+src/pkcs7_val.i: src/pkcs7_val.cpp.i
+.PHONY : src/pkcs7_val.i
+
+# target to preprocess a source file
+src/pkcs7_val.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val.dir/build.make CMakeFiles/pkcs7_val.dir/src/pkcs7_val.cpp.i
+.PHONY : src/pkcs7_val.cpp.i
+
+src/pkcs7_val.s: src/pkcs7_val.cpp.s
+.PHONY : src/pkcs7_val.s
+
+# target to generate assembly for a file
+src/pkcs7_val.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val.dir/build.make CMakeFiles/pkcs7_val.dir/src/pkcs7_val.cpp.s
+.PHONY : src/pkcs7_val.cpp.s
+
+src/pkcs7_val_main.o: src/pkcs7_val_main.cpp.o
+.PHONY : src/pkcs7_val_main.o
+
+# target to build an object file
+src/pkcs7_val_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val_main.dir/build.make CMakeFiles/pkcs7_val_main.dir/src/pkcs7_val_main.cpp.o
+.PHONY : src/pkcs7_val_main.cpp.o
+
+src/pkcs7_val_main.i: src/pkcs7_val_main.cpp.i
+.PHONY : src/pkcs7_val_main.i
+
+# target to preprocess a source file
+src/pkcs7_val_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val_main.dir/build.make CMakeFiles/pkcs7_val_main.dir/src/pkcs7_val_main.cpp.i
+.PHONY : src/pkcs7_val_main.cpp.i
+
+src/pkcs7_val_main.s: src/pkcs7_val_main.cpp.s
+.PHONY : src/pkcs7_val_main.s
+
+# target to generate assembly for a file
+src/pkcs7_val_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val_main.dir/build.make CMakeFiles/pkcs7_val_main.dir/src/pkcs7_val_main.cpp.s
+.PHONY : src/pkcs7_val_main.cpp.s
+
+src/utils.o: src/utils.cpp.o
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
+
 src/xor.o: src/xor.cpp.o
 .PHONY : src/xor.o
 
@@ -507,30 +1016,74 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... aes_cbc"
 	@echo "... aes_ecb"
 	@echo "... base64"
+	@echo "... byte_ecb"
+	@echo "... byte_ecb_hard"
+	@echo "... byte_ecb_hard_main"
+	@echo "... byte_ecb_main"
 	@echo "... cbc"
+	@echo "... cbc_bitflip"
+	@echo "... cbc_bitflip_main"
 	@echo "... cbc_main"
+	@echo "... ecb_cut"
+	@echo "... ecb_cut_main"
 	@echo "... oracle"
 	@echo "... oracle_main"
 	@echo "... pkcs7"
 	@echo "... pkcs7_main"
+	@echo "... pkcs7_val"
+	@echo "... pkcs7_val_main"
+	@echo "... run_byte_ecb_hard_tests"
+	@echo "... run_byte_ecb_tests"
+	@echo "... run_cbc_bitflip_tests"
 	@echo "... run_cbc_tests"
+	@echo "... run_ecb_cut_tests"
 	@echo "... run_oracle_tests"
 	@echo "... run_pkcs7_tests"
+	@echo "... run_pkcs7_val_tests"
+	@echo "... utils"
 	@echo "... xor"
+	@echo "... src/aes_cbc.o"
+	@echo "... src/aes_cbc.i"
+	@echo "... src/aes_cbc.s"
 	@echo "... src/aes_ecb.o"
 	@echo "... src/aes_ecb.i"
 	@echo "... src/aes_ecb.s"
 	@echo "... src/base64.o"
 	@echo "... src/base64.i"
 	@echo "... src/base64.s"
+	@echo "... src/byte_ecb.o"
+	@echo "... src/byte_ecb.i"
+	@echo "... src/byte_ecb.s"
+	@echo "... src/byte_ecb_hard.o"
+	@echo "... src/byte_ecb_hard.i"
+	@echo "... src/byte_ecb_hard.s"
+	@echo "... src/byte_ecb_hard_main.o"
+	@echo "... src/byte_ecb_hard_main.i"
+	@echo "... src/byte_ecb_hard_main.s"
+	@echo "... src/byte_ecb_main.o"
+	@echo "... src/byte_ecb_main.i"
+	@echo "... src/byte_ecb_main.s"
 	@echo "... src/cbc.o"
 	@echo "... src/cbc.i"
 	@echo "... src/cbc.s"
+	@echo "... src/cbc_bitflip.o"
+	@echo "... src/cbc_bitflip.i"
+	@echo "... src/cbc_bitflip.s"
+	@echo "... src/cbc_bitflip_main.o"
+	@echo "... src/cbc_bitflip_main.i"
+	@echo "... src/cbc_bitflip_main.s"
 	@echo "... src/cbc_main.o"
 	@echo "... src/cbc_main.i"
 	@echo "... src/cbc_main.s"
+	@echo "... src/ecb_cut.o"
+	@echo "... src/ecb_cut.i"
+	@echo "... src/ecb_cut.s"
+	@echo "... src/ecb_cut_main.o"
+	@echo "... src/ecb_cut_main.i"
+	@echo "... src/ecb_cut_main.s"
 	@echo "... src/oracle.o"
 	@echo "... src/oracle.i"
 	@echo "... src/oracle.s"
@@ -543,6 +1096,15 @@ help:
 	@echo "... src/pkcs7_main.o"
 	@echo "... src/pkcs7_main.i"
 	@echo "... src/pkcs7_main.s"
+	@echo "... src/pkcs7_val.o"
+	@echo "... src/pkcs7_val.i"
+	@echo "... src/pkcs7_val.s"
+	@echo "... src/pkcs7_val_main.o"
+	@echo "... src/pkcs7_val_main.i"
+	@echo "... src/pkcs7_val_main.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 	@echo "... src/xor.o"
 	@echo "... src/xor.i"
 	@echo "... src/xor.s"

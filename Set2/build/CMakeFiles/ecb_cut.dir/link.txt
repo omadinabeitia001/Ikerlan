@@ -1,0 +1,2 @@
+/usr/bin/ar qc libecb_cut.a CMakeFiles/ecb_cut.dir/src/ecb_cut.cpp.o
+/usr/bin/ranlib libecb_cut.a

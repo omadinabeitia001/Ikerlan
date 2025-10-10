@@ -168,6 +168,124 @@ run_oracle_tests/fast:
 	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_oracle_tests.dir/build.make tests/CMakeFiles/run_oracle_tests.dir/build
 .PHONY : run_oracle_tests/fast
 
+# Convenience name for target.
+tests/CMakeFiles/run_byte_ecb_tests.dir/rule:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_byte_ecb_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_byte_ecb_tests.dir/rule
+
+# Convenience name for target.
+run_byte_ecb_tests: tests/CMakeFiles/run_byte_ecb_tests.dir/rule
+.PHONY : run_byte_ecb_tests
+
+# fast build rule for target.
+run_byte_ecb_tests/fast:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/build
+.PHONY : run_byte_ecb_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_ecb_cut_tests.dir/rule:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_ecb_cut_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_ecb_cut_tests.dir/rule
+
+# Convenience name for target.
+run_ecb_cut_tests: tests/CMakeFiles/run_ecb_cut_tests.dir/rule
+.PHONY : run_ecb_cut_tests
+
+# fast build rule for target.
+run_ecb_cut_tests/fast:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/build
+.PHONY : run_ecb_cut_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/rule:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_byte_ecb_hard_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_byte_ecb_hard_tests.dir/rule
+
+# Convenience name for target.
+run_byte_ecb_hard_tests: tests/CMakeFiles/run_byte_ecb_hard_tests.dir/rule
+.PHONY : run_byte_ecb_hard_tests
+
+# fast build rule for target.
+run_byte_ecb_hard_tests/fast:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build
+.PHONY : run_byte_ecb_hard_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_pkcs7_val_tests.dir/rule:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_pkcs7_val_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_pkcs7_val_tests.dir/rule
+
+# Convenience name for target.
+run_pkcs7_val_tests: tests/CMakeFiles/run_pkcs7_val_tests.dir/rule
+.PHONY : run_pkcs7_val_tests
+
+# fast build rule for target.
+run_pkcs7_val_tests/fast:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/build
+.PHONY : run_pkcs7_val_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_cbc_bitflip_tests.dir/rule:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_cbc_bitflip_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_cbc_bitflip_tests.dir/rule
+
+# Convenience name for target.
+run_cbc_bitflip_tests: tests/CMakeFiles/run_cbc_bitflip_tests.dir/rule
+.PHONY : run_cbc_bitflip_tests
+
+# fast build rule for target.
+run_cbc_bitflip_tests/fast:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/build
+.PHONY : run_cbc_bitflip_tests/fast
+
+test_byte_ecb.o: test_byte_ecb.cpp.o
+.PHONY : test_byte_ecb.o
+
+# target to build an object file
+test_byte_ecb.cpp.o:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/test_byte_ecb.cpp.o
+.PHONY : test_byte_ecb.cpp.o
+
+test_byte_ecb.i: test_byte_ecb.cpp.i
+.PHONY : test_byte_ecb.i
+
+# target to preprocess a source file
+test_byte_ecb.cpp.i:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/test_byte_ecb.cpp.i
+.PHONY : test_byte_ecb.cpp.i
+
+test_byte_ecb.s: test_byte_ecb.cpp.s
+.PHONY : test_byte_ecb.s
+
+# target to generate assembly for a file
+test_byte_ecb.cpp.s:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/test_byte_ecb.cpp.s
+.PHONY : test_byte_ecb.cpp.s
+
+test_byte_ecb_hard.o: test_byte_ecb_hard.cpp.o
+.PHONY : test_byte_ecb_hard.o
+
+# target to build an object file
+test_byte_ecb_hard.cpp.o:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/test_byte_ecb_hard.cpp.o
+.PHONY : test_byte_ecb_hard.cpp.o
+
+test_byte_ecb_hard.i: test_byte_ecb_hard.cpp.i
+.PHONY : test_byte_ecb_hard.i
+
+# target to preprocess a source file
+test_byte_ecb_hard.cpp.i:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/test_byte_ecb_hard.cpp.i
+.PHONY : test_byte_ecb_hard.cpp.i
+
+test_byte_ecb_hard.s: test_byte_ecb_hard.cpp.s
+.PHONY : test_byte_ecb_hard.s
+
+# target to generate assembly for a file
+test_byte_ecb_hard.cpp.s:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/test_byte_ecb_hard.cpp.s
+.PHONY : test_byte_ecb_hard.cpp.s
+
 test_cbc.o: test_cbc.cpp.o
 .PHONY : test_cbc.o
 
@@ -191,6 +309,54 @@ test_cbc.s: test_cbc.cpp.s
 test_cbc.cpp.s:
 	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_tests.dir/build.make tests/CMakeFiles/run_cbc_tests.dir/test_cbc.cpp.s
 .PHONY : test_cbc.cpp.s
+
+test_cbc_bitflip.o: test_cbc_bitflip.cpp.o
+.PHONY : test_cbc_bitflip.o
+
+# target to build an object file
+test_cbc_bitflip.cpp.o:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/test_cbc_bitflip.cpp.o
+.PHONY : test_cbc_bitflip.cpp.o
+
+test_cbc_bitflip.i: test_cbc_bitflip.cpp.i
+.PHONY : test_cbc_bitflip.i
+
+# target to preprocess a source file
+test_cbc_bitflip.cpp.i:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/test_cbc_bitflip.cpp.i
+.PHONY : test_cbc_bitflip.cpp.i
+
+test_cbc_bitflip.s: test_cbc_bitflip.cpp.s
+.PHONY : test_cbc_bitflip.s
+
+# target to generate assembly for a file
+test_cbc_bitflip.cpp.s:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/test_cbc_bitflip.cpp.s
+.PHONY : test_cbc_bitflip.cpp.s
+
+test_ecb_cut.o: test_ecb_cut.cpp.o
+.PHONY : test_ecb_cut.o
+
+# target to build an object file
+test_ecb_cut.cpp.o:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/test_ecb_cut.cpp.o
+.PHONY : test_ecb_cut.cpp.o
+
+test_ecb_cut.i: test_ecb_cut.cpp.i
+.PHONY : test_ecb_cut.i
+
+# target to preprocess a source file
+test_ecb_cut.cpp.i:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/test_ecb_cut.cpp.i
+.PHONY : test_ecb_cut.cpp.i
+
+test_ecb_cut.s: test_ecb_cut.cpp.s
+.PHONY : test_ecb_cut.s
+
+# target to generate assembly for a file
+test_ecb_cut.cpp.s:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/test_ecb_cut.cpp.s
+.PHONY : test_ecb_cut.cpp.s
 
 test_oracle.o: test_oracle.cpp.o
 .PHONY : test_oracle.o
@@ -240,6 +406,30 @@ test_pkcs7.cpp.s:
 	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_tests.dir/build.make tests/CMakeFiles/run_pkcs7_tests.dir/test_pkcs7.cpp.s
 .PHONY : test_pkcs7.cpp.s
 
+test_pkcs7_val.o: test_pkcs7_val.cpp.o
+.PHONY : test_pkcs7_val.o
+
+# target to build an object file
+test_pkcs7_val.cpp.o:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/test_pkcs7_val.cpp.o
+.PHONY : test_pkcs7_val.cpp.o
+
+test_pkcs7_val.i: test_pkcs7_val.cpp.i
+.PHONY : test_pkcs7_val.i
+
+# target to preprocess a source file
+test_pkcs7_val.cpp.i:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/test_pkcs7_val.cpp.i
+.PHONY : test_pkcs7_val.cpp.i
+
+test_pkcs7_val.s: test_pkcs7_val.cpp.s
+.PHONY : test_pkcs7_val.s
+
+# target to generate assembly for a file
+test_pkcs7_val.cpp.s:
+	cd /home/student/Ikerlan/Set2/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/test_pkcs7_val.cpp.s
+.PHONY : test_pkcs7_val.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,18 +439,38 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... run_byte_ecb_hard_tests"
+	@echo "... run_byte_ecb_tests"
+	@echo "... run_cbc_bitflip_tests"
 	@echo "... run_cbc_tests"
+	@echo "... run_ecb_cut_tests"
 	@echo "... run_oracle_tests"
 	@echo "... run_pkcs7_tests"
+	@echo "... run_pkcs7_val_tests"
+	@echo "... test_byte_ecb.o"
+	@echo "... test_byte_ecb.i"
+	@echo "... test_byte_ecb.s"
+	@echo "... test_byte_ecb_hard.o"
+	@echo "... test_byte_ecb_hard.i"
+	@echo "... test_byte_ecb_hard.s"
 	@echo "... test_cbc.o"
 	@echo "... test_cbc.i"
 	@echo "... test_cbc.s"
+	@echo "... test_cbc_bitflip.o"
+	@echo "... test_cbc_bitflip.i"
+	@echo "... test_cbc_bitflip.s"
+	@echo "... test_ecb_cut.o"
+	@echo "... test_ecb_cut.i"
+	@echo "... test_ecb_cut.s"
 	@echo "... test_oracle.o"
 	@echo "... test_oracle.i"
 	@echo "... test_oracle.s"
 	@echo "... test_pkcs7.o"
 	@echo "... test_pkcs7.i"
 	@echo "... test_pkcs7.s"
+	@echo "... test_pkcs7_val.o"
+	@echo "... test_pkcs7_val.i"
+	@echo "... test_pkcs7_val.s"
 .PHONY : help
 
 

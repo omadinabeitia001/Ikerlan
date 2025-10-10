@@ -69,9 +69,21 @@ all: CMakeFiles/base64.dir/all
 all: CMakeFiles/aes_ecb.dir/all
 all: CMakeFiles/cbc.dir/all
 all: CMakeFiles/oracle.dir/all
+all: CMakeFiles/utils.dir/all
+all: CMakeFiles/byte_ecb.dir/all
+all: CMakeFiles/ecb_cut.dir/all
+all: CMakeFiles/byte_ecb_hard.dir/all
+all: CMakeFiles/pkcs7_val.dir/all
+all: CMakeFiles/aes_cbc.dir/all
+all: CMakeFiles/cbc_bitflip.dir/all
 all: CMakeFiles/pkcs7_main.dir/all
 all: CMakeFiles/cbc_main.dir/all
 all: CMakeFiles/oracle_main.dir/all
+all: CMakeFiles/byte_ecb_main.dir/all
+all: CMakeFiles/ecb_cut_main.dir/all
+all: CMakeFiles/byte_ecb_hard_main.dir/all
+all: CMakeFiles/pkcs7_val_main.dir/all
+all: CMakeFiles/cbc_bitflip_main.dir/all
 all: tests/all
 .PHONY : all
 
@@ -86,9 +98,21 @@ clean: CMakeFiles/base64.dir/clean
 clean: CMakeFiles/aes_ecb.dir/clean
 clean: CMakeFiles/cbc.dir/clean
 clean: CMakeFiles/oracle.dir/clean
+clean: CMakeFiles/utils.dir/clean
+clean: CMakeFiles/byte_ecb.dir/clean
+clean: CMakeFiles/ecb_cut.dir/clean
+clean: CMakeFiles/byte_ecb_hard.dir/clean
+clean: CMakeFiles/pkcs7_val.dir/clean
+clean: CMakeFiles/aes_cbc.dir/clean
+clean: CMakeFiles/cbc_bitflip.dir/clean
 clean: CMakeFiles/pkcs7_main.dir/clean
 clean: CMakeFiles/cbc_main.dir/clean
 clean: CMakeFiles/oracle_main.dir/clean
+clean: CMakeFiles/byte_ecb_main.dir/clean
+clean: CMakeFiles/ecb_cut_main.dir/clean
+clean: CMakeFiles/byte_ecb_hard_main.dir/clean
+clean: CMakeFiles/pkcs7_val_main.dir/clean
+clean: CMakeFiles/cbc_bitflip_main.dir/clean
 clean: tests/clean
 .PHONY : clean
 
@@ -99,6 +123,11 @@ clean: tests/clean
 tests/all: tests/CMakeFiles/run_pkcs7_tests.dir/all
 tests/all: tests/CMakeFiles/run_cbc_tests.dir/all
 tests/all: tests/CMakeFiles/run_oracle_tests.dir/all
+tests/all: tests/CMakeFiles/run_byte_ecb_tests.dir/all
+tests/all: tests/CMakeFiles/run_ecb_cut_tests.dir/all
+tests/all: tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all
+tests/all: tests/CMakeFiles/run_pkcs7_val_tests.dir/all
+tests/all: tests/CMakeFiles/run_cbc_bitflip_tests.dir/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
@@ -109,6 +138,11 @@ tests/preinstall:
 tests/clean: tests/CMakeFiles/run_pkcs7_tests.dir/clean
 tests/clean: tests/CMakeFiles/run_cbc_tests.dir/clean
 tests/clean: tests/CMakeFiles/run_oracle_tests.dir/clean
+tests/clean: tests/CMakeFiles/run_byte_ecb_tests.dir/clean
+tests/clean: tests/CMakeFiles/run_ecb_cut_tests.dir/clean
+tests/clean: tests/CMakeFiles/run_byte_ecb_hard_tests.dir/clean
+tests/clean: tests/CMakeFiles/run_pkcs7_val_tests.dir/clean
+tests/clean: tests/CMakeFiles/run_cbc_bitflip_tests.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -118,7 +152,7 @@ tests/clean: tests/CMakeFiles/run_oracle_tests.dir/clean
 CMakeFiles/pkcs7.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7.dir/build.make CMakeFiles/pkcs7.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7.dir/build.make CMakeFiles/pkcs7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=13,14 "Built target pkcs7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=31,32 "Built target pkcs7"
 .PHONY : CMakeFiles/pkcs7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -144,7 +178,7 @@ CMakeFiles/pkcs7.dir/clean:
 CMakeFiles/xor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/xor.dir/build.make CMakeFiles/xor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/xor.dir/build.make CMakeFiles/xor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=23,24 "Built target xor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=57,58 "Built target xor"
 .PHONY : CMakeFiles/xor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -170,7 +204,7 @@ CMakeFiles/xor.dir/clean:
 CMakeFiles/base64.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base64.dir/build.make CMakeFiles/base64.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base64.dir/build.make CMakeFiles/base64.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=3,4 "Built target base64"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=5,6 "Built target base64"
 .PHONY : CMakeFiles/base64.dir/all
 
 # Build rule for subdir invocation for target.
@@ -196,7 +230,7 @@ CMakeFiles/base64.dir/clean:
 CMakeFiles/aes_ecb.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb.dir/build.make CMakeFiles/aes_ecb.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_ecb.dir/build.make CMakeFiles/aes_ecb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=1,2 "Built target aes_ecb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=3,4 "Built target aes_ecb"
 .PHONY : CMakeFiles/aes_ecb.dir/all
 
 # Build rule for subdir invocation for target.
@@ -224,7 +258,7 @@ CMakeFiles/cbc.dir/all: CMakeFiles/xor.dir/all
 CMakeFiles/cbc.dir/all: CMakeFiles/aes_ecb.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc.dir/build.make CMakeFiles/cbc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc.dir/build.make CMakeFiles/cbc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=5,6 "Built target cbc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=15,16 "Built target cbc"
 .PHONY : CMakeFiles/cbc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -247,13 +281,13 @@ CMakeFiles/cbc.dir/clean:
 # Target rules for target CMakeFiles/oracle.dir
 
 # All Build rule for target.
+CMakeFiles/oracle.dir/all: CMakeFiles/cbc.dir/all
 CMakeFiles/oracle.dir/all: CMakeFiles/pkcs7.dir/all
 CMakeFiles/oracle.dir/all: CMakeFiles/xor.dir/all
-CMakeFiles/oracle.dir/all: CMakeFiles/cbc.dir/all
 CMakeFiles/oracle.dir/all: CMakeFiles/aes_ecb.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oracle.dir/build.make CMakeFiles/oracle.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oracle.dir/build.make CMakeFiles/oracle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=9,10 "Built target oracle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=27,28 "Built target oracle"
 .PHONY : CMakeFiles/oracle.dir/all
 
 # Build rule for subdir invocation for target.
@@ -273,13 +307,202 @@ CMakeFiles/oracle.dir/clean:
 .PHONY : CMakeFiles/oracle.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/utils.dir
+
+# All Build rule for target.
+CMakeFiles/utils.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=55,56 "Built target utils"
+.PHONY : CMakeFiles/utils.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/utils.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/utils.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/utils.dir/rule
+
+# Convenience name for target.
+utils: CMakeFiles/utils.dir/rule
+.PHONY : utils
+
+# clean rule for target.
+CMakeFiles/utils.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/clean
+.PHONY : CMakeFiles/utils.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/byte_ecb.dir
+
+# All Build rule for target.
+CMakeFiles/byte_ecb.dir/all: CMakeFiles/utils.dir/all
+CMakeFiles/byte_ecb.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/byte_ecb.dir/all: CMakeFiles/base64.dir/all
+CMakeFiles/byte_ecb.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb.dir/build.make CMakeFiles/byte_ecb.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb.dir/build.make CMakeFiles/byte_ecb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=7,8 "Built target byte_ecb"
+.PHONY : CMakeFiles/byte_ecb.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/byte_ecb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/byte_ecb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/byte_ecb.dir/rule
+
+# Convenience name for target.
+byte_ecb: CMakeFiles/byte_ecb.dir/rule
+.PHONY : byte_ecb
+
+# clean rule for target.
+CMakeFiles/byte_ecb.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb.dir/build.make CMakeFiles/byte_ecb.dir/clean
+.PHONY : CMakeFiles/byte_ecb.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ecb_cut.dir
+
+# All Build rule for target.
+CMakeFiles/ecb_cut.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/ecb_cut.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut.dir/build.make CMakeFiles/ecb_cut.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut.dir/build.make CMakeFiles/ecb_cut.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=23,24 "Built target ecb_cut"
+.PHONY : CMakeFiles/ecb_cut.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ecb_cut.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ecb_cut.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/ecb_cut.dir/rule
+
+# Convenience name for target.
+ecb_cut: CMakeFiles/ecb_cut.dir/rule
+.PHONY : ecb_cut
+
+# clean rule for target.
+CMakeFiles/ecb_cut.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut.dir/build.make CMakeFiles/ecb_cut.dir/clean
+.PHONY : CMakeFiles/ecb_cut.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/byte_ecb_hard.dir
+
+# All Build rule for target.
+CMakeFiles/byte_ecb_hard.dir/all: CMakeFiles/utils.dir/all
+CMakeFiles/byte_ecb_hard.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/byte_ecb_hard.dir/all: CMakeFiles/base64.dir/all
+CMakeFiles/byte_ecb_hard.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard.dir/build.make CMakeFiles/byte_ecb_hard.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard.dir/build.make CMakeFiles/byte_ecb_hard.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=9,10 "Built target byte_ecb_hard"
+.PHONY : CMakeFiles/byte_ecb_hard.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/byte_ecb_hard.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/byte_ecb_hard.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/byte_ecb_hard.dir/rule
+
+# Convenience name for target.
+byte_ecb_hard: CMakeFiles/byte_ecb_hard.dir/rule
+.PHONY : byte_ecb_hard
+
+# clean rule for target.
+CMakeFiles/byte_ecb_hard.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard.dir/build.make CMakeFiles/byte_ecb_hard.dir/clean
+.PHONY : CMakeFiles/byte_ecb_hard.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pkcs7_val.dir
+
+# All Build rule for target.
+CMakeFiles/pkcs7_val.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val.dir/build.make CMakeFiles/pkcs7_val.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val.dir/build.make CMakeFiles/pkcs7_val.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=35,36 "Built target pkcs7_val"
+.PHONY : CMakeFiles/pkcs7_val.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pkcs7_val.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pkcs7_val.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/pkcs7_val.dir/rule
+
+# Convenience name for target.
+pkcs7_val: CMakeFiles/pkcs7_val.dir/rule
+.PHONY : pkcs7_val
+
+# clean rule for target.
+CMakeFiles/pkcs7_val.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val.dir/build.make CMakeFiles/pkcs7_val.dir/clean
+.PHONY : CMakeFiles/pkcs7_val.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/aes_cbc.dir
+
+# All Build rule for target.
+CMakeFiles/aes_cbc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_cbc.dir/build.make CMakeFiles/aes_cbc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_cbc.dir/build.make CMakeFiles/aes_cbc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=1,2 "Built target aes_cbc"
+.PHONY : CMakeFiles/aes_cbc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/aes_cbc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/aes_cbc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/aes_cbc.dir/rule
+
+# Convenience name for target.
+aes_cbc: CMakeFiles/aes_cbc.dir/rule
+.PHONY : aes_cbc
+
+# clean rule for target.
+CMakeFiles/aes_cbc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/aes_cbc.dir/build.make CMakeFiles/aes_cbc.dir/clean
+.PHONY : CMakeFiles/aes_cbc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cbc_bitflip.dir
+
+# All Build rule for target.
+CMakeFiles/cbc_bitflip.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip.dir/build.make CMakeFiles/cbc_bitflip.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip.dir/build.make CMakeFiles/cbc_bitflip.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=17,18 "Built target cbc_bitflip"
+.PHONY : CMakeFiles/cbc_bitflip.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cbc_bitflip.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cbc_bitflip.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/cbc_bitflip.dir/rule
+
+# Convenience name for target.
+cbc_bitflip: CMakeFiles/cbc_bitflip.dir/rule
+.PHONY : cbc_bitflip
+
+# clean rule for target.
+CMakeFiles/cbc_bitflip.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip.dir/build.make CMakeFiles/cbc_bitflip.dir/clean
+.PHONY : CMakeFiles/cbc_bitflip.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/pkcs7_main.dir
 
 # All Build rule for target.
 CMakeFiles/pkcs7_main.dir/all: CMakeFiles/pkcs7.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_main.dir/build.make CMakeFiles/pkcs7_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_main.dir/build.make CMakeFiles/pkcs7_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=15,16 "Built target pkcs7_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=33,34 "Built target pkcs7_main"
 .PHONY : CMakeFiles/pkcs7_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -302,14 +525,14 @@ CMakeFiles/pkcs7_main.dir/clean:
 # Target rules for target CMakeFiles/cbc_main.dir
 
 # All Build rule for target.
+CMakeFiles/cbc_main.dir/all: CMakeFiles/cbc.dir/all
 CMakeFiles/cbc_main.dir/all: CMakeFiles/pkcs7.dir/all
 CMakeFiles/cbc_main.dir/all: CMakeFiles/xor.dir/all
-CMakeFiles/cbc_main.dir/all: CMakeFiles/cbc.dir/all
 CMakeFiles/cbc_main.dir/all: CMakeFiles/base64.dir/all
 CMakeFiles/cbc_main.dir/all: CMakeFiles/aes_ecb.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_main.dir/build.make CMakeFiles/cbc_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_main.dir/build.make CMakeFiles/cbc_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=7,8 "Built target cbc_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=21,22 "Built target cbc_main"
 .PHONY : CMakeFiles/cbc_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -332,14 +555,14 @@ CMakeFiles/cbc_main.dir/clean:
 # Target rules for target CMakeFiles/oracle_main.dir
 
 # All Build rule for target.
-CMakeFiles/oracle_main.dir/all: CMakeFiles/pkcs7.dir/all
-CMakeFiles/oracle_main.dir/all: CMakeFiles/xor.dir/all
 CMakeFiles/oracle_main.dir/all: CMakeFiles/cbc.dir/all
 CMakeFiles/oracle_main.dir/all: CMakeFiles/oracle.dir/all
+CMakeFiles/oracle_main.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/oracle_main.dir/all: CMakeFiles/xor.dir/all
 CMakeFiles/oracle_main.dir/all: CMakeFiles/aes_ecb.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oracle_main.dir/build.make CMakeFiles/oracle_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oracle_main.dir/build.make CMakeFiles/oracle_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=11,12 "Built target oracle_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=29,30 "Built target oracle_main"
 .PHONY : CMakeFiles/oracle_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -359,13 +582,157 @@ CMakeFiles/oracle_main.dir/clean:
 .PHONY : CMakeFiles/oracle_main.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/byte_ecb_main.dir
+
+# All Build rule for target.
+CMakeFiles/byte_ecb_main.dir/all: CMakeFiles/utils.dir/all
+CMakeFiles/byte_ecb_main.dir/all: CMakeFiles/byte_ecb.dir/all
+CMakeFiles/byte_ecb_main.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/byte_ecb_main.dir/all: CMakeFiles/base64.dir/all
+CMakeFiles/byte_ecb_main.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_main.dir/build.make CMakeFiles/byte_ecb_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_main.dir/build.make CMakeFiles/byte_ecb_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=13,14 "Built target byte_ecb_main"
+.PHONY : CMakeFiles/byte_ecb_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/byte_ecb_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/byte_ecb_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/byte_ecb_main.dir/rule
+
+# Convenience name for target.
+byte_ecb_main: CMakeFiles/byte_ecb_main.dir/rule
+.PHONY : byte_ecb_main
+
+# clean rule for target.
+CMakeFiles/byte_ecb_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_main.dir/build.make CMakeFiles/byte_ecb_main.dir/clean
+.PHONY : CMakeFiles/byte_ecb_main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ecb_cut_main.dir
+
+# All Build rule for target.
+CMakeFiles/ecb_cut_main.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/ecb_cut_main.dir/all: CMakeFiles/ecb_cut.dir/all
+CMakeFiles/ecb_cut_main.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut_main.dir/build.make CMakeFiles/ecb_cut_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut_main.dir/build.make CMakeFiles/ecb_cut_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=25,26 "Built target ecb_cut_main"
+.PHONY : CMakeFiles/ecb_cut_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ecb_cut_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ecb_cut_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/ecb_cut_main.dir/rule
+
+# Convenience name for target.
+ecb_cut_main: CMakeFiles/ecb_cut_main.dir/rule
+.PHONY : ecb_cut_main
+
+# clean rule for target.
+CMakeFiles/ecb_cut_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ecb_cut_main.dir/build.make CMakeFiles/ecb_cut_main.dir/clean
+.PHONY : CMakeFiles/ecb_cut_main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/byte_ecb_hard_main.dir
+
+# All Build rule for target.
+CMakeFiles/byte_ecb_hard_main.dir/all: CMakeFiles/utils.dir/all
+CMakeFiles/byte_ecb_hard_main.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/byte_ecb_hard_main.dir/all: CMakeFiles/byte_ecb_hard.dir/all
+CMakeFiles/byte_ecb_hard_main.dir/all: CMakeFiles/base64.dir/all
+CMakeFiles/byte_ecb_hard_main.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard_main.dir/build.make CMakeFiles/byte_ecb_hard_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard_main.dir/build.make CMakeFiles/byte_ecb_hard_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=11,12 "Built target byte_ecb_hard_main"
+.PHONY : CMakeFiles/byte_ecb_hard_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/byte_ecb_hard_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/byte_ecb_hard_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/byte_ecb_hard_main.dir/rule
+
+# Convenience name for target.
+byte_ecb_hard_main: CMakeFiles/byte_ecb_hard_main.dir/rule
+.PHONY : byte_ecb_hard_main
+
+# clean rule for target.
+CMakeFiles/byte_ecb_hard_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/byte_ecb_hard_main.dir/build.make CMakeFiles/byte_ecb_hard_main.dir/clean
+.PHONY : CMakeFiles/byte_ecb_hard_main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pkcs7_val_main.dir
+
+# All Build rule for target.
+CMakeFiles/pkcs7_val_main.dir/all: CMakeFiles/pkcs7_val.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val_main.dir/build.make CMakeFiles/pkcs7_val_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val_main.dir/build.make CMakeFiles/pkcs7_val_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=37,38 "Built target pkcs7_val_main"
+.PHONY : CMakeFiles/pkcs7_val_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pkcs7_val_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pkcs7_val_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/pkcs7_val_main.dir/rule
+
+# Convenience name for target.
+pkcs7_val_main: CMakeFiles/pkcs7_val_main.dir/rule
+.PHONY : pkcs7_val_main
+
+# clean rule for target.
+CMakeFiles/pkcs7_val_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pkcs7_val_main.dir/build.make CMakeFiles/pkcs7_val_main.dir/clean
+.PHONY : CMakeFiles/pkcs7_val_main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cbc_bitflip_main.dir
+
+# All Build rule for target.
+CMakeFiles/cbc_bitflip_main.dir/all: CMakeFiles/utils.dir/all
+CMakeFiles/cbc_bitflip_main.dir/all: CMakeFiles/pkcs7.dir/all
+CMakeFiles/cbc_bitflip_main.dir/all: CMakeFiles/pkcs7_val.dir/all
+CMakeFiles/cbc_bitflip_main.dir/all: CMakeFiles/aes_cbc.dir/all
+CMakeFiles/cbc_bitflip_main.dir/all: CMakeFiles/cbc_bitflip.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip_main.dir/build.make CMakeFiles/cbc_bitflip_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip_main.dir/build.make CMakeFiles/cbc_bitflip_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=19,20 "Built target cbc_bitflip_main"
+.PHONY : CMakeFiles/cbc_bitflip_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cbc_bitflip_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cbc_bitflip_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : CMakeFiles/cbc_bitflip_main.dir/rule
+
+# Convenience name for target.
+cbc_bitflip_main: CMakeFiles/cbc_bitflip_main.dir/rule
+.PHONY : cbc_bitflip_main
+
+# clean rule for target.
+CMakeFiles/cbc_bitflip_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cbc_bitflip_main.dir/build.make CMakeFiles/cbc_bitflip_main.dir/clean
+.PHONY : CMakeFiles/cbc_bitflip_main.dir/clean
+
+#=============================================================================
 # Target rules for target tests/CMakeFiles/run_pkcs7_tests.dir
 
 # All Build rule for target.
 tests/CMakeFiles/run_pkcs7_tests.dir/all: CMakeFiles/pkcs7.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_tests.dir/build.make tests/CMakeFiles/run_pkcs7_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_tests.dir/build.make tests/CMakeFiles/run_pkcs7_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=21,22 "Built target run_pkcs7_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=51,52 "Built target run_pkcs7_tests"
 .PHONY : tests/CMakeFiles/run_pkcs7_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -388,14 +755,14 @@ tests/CMakeFiles/run_pkcs7_tests.dir/clean:
 # Target rules for target tests/CMakeFiles/run_cbc_tests.dir
 
 # All Build rule for target.
+tests/CMakeFiles/run_cbc_tests.dir/all: CMakeFiles/cbc.dir/all
 tests/CMakeFiles/run_cbc_tests.dir/all: CMakeFiles/pkcs7.dir/all
 tests/CMakeFiles/run_cbc_tests.dir/all: CMakeFiles/xor.dir/all
-tests/CMakeFiles/run_cbc_tests.dir/all: CMakeFiles/cbc.dir/all
 tests/CMakeFiles/run_cbc_tests.dir/all: CMakeFiles/base64.dir/all
 tests/CMakeFiles/run_cbc_tests.dir/all: CMakeFiles/aes_ecb.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_tests.dir/build.make tests/CMakeFiles/run_cbc_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_tests.dir/build.make tests/CMakeFiles/run_cbc_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=17,18 "Built target run_cbc_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=45,46 "Built target run_cbc_tests"
 .PHONY : tests/CMakeFiles/run_cbc_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -418,14 +785,14 @@ tests/CMakeFiles/run_cbc_tests.dir/clean:
 # Target rules for target tests/CMakeFiles/run_oracle_tests.dir
 
 # All Build rule for target.
-tests/CMakeFiles/run_oracle_tests.dir/all: CMakeFiles/pkcs7.dir/all
-tests/CMakeFiles/run_oracle_tests.dir/all: CMakeFiles/xor.dir/all
 tests/CMakeFiles/run_oracle_tests.dir/all: CMakeFiles/cbc.dir/all
 tests/CMakeFiles/run_oracle_tests.dir/all: CMakeFiles/oracle.dir/all
+tests/CMakeFiles/run_oracle_tests.dir/all: CMakeFiles/pkcs7.dir/all
+tests/CMakeFiles/run_oracle_tests.dir/all: CMakeFiles/xor.dir/all
 tests/CMakeFiles/run_oracle_tests.dir/all: CMakeFiles/aes_ecb.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_oracle_tests.dir/build.make tests/CMakeFiles/run_oracle_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_oracle_tests.dir/build.make tests/CMakeFiles/run_oracle_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=19,20 "Built target run_oracle_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=49,50 "Built target run_oracle_tests"
 .PHONY : tests/CMakeFiles/run_oracle_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -443,6 +810,146 @@ run_oracle_tests: tests/CMakeFiles/run_oracle_tests.dir/rule
 tests/CMakeFiles/run_oracle_tests.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_oracle_tests.dir/build.make tests/CMakeFiles/run_oracle_tests.dir/clean
 .PHONY : tests/CMakeFiles/run_oracle_tests.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/run_byte_ecb_tests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/run_byte_ecb_tests.dir/all: CMakeFiles/utils.dir/all
+tests/CMakeFiles/run_byte_ecb_tests.dir/all: CMakeFiles/byte_ecb.dir/all
+tests/CMakeFiles/run_byte_ecb_tests.dir/all: CMakeFiles/pkcs7.dir/all
+tests/CMakeFiles/run_byte_ecb_tests.dir/all: CMakeFiles/base64.dir/all
+tests/CMakeFiles/run_byte_ecb_tests.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=41,42 "Built target run_byte_ecb_tests"
+.PHONY : tests/CMakeFiles/run_byte_ecb_tests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/run_byte_ecb_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_byte_ecb_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/run_byte_ecb_tests.dir/rule
+
+# Convenience name for target.
+run_byte_ecb_tests: tests/CMakeFiles/run_byte_ecb_tests.dir/rule
+.PHONY : run_byte_ecb_tests
+
+# clean rule for target.
+tests/CMakeFiles/run_byte_ecb_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_tests.dir/clean
+.PHONY : tests/CMakeFiles/run_byte_ecb_tests.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/run_ecb_cut_tests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/run_ecb_cut_tests.dir/all: CMakeFiles/pkcs7.dir/all
+tests/CMakeFiles/run_ecb_cut_tests.dir/all: CMakeFiles/ecb_cut.dir/all
+tests/CMakeFiles/run_ecb_cut_tests.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=47,48 "Built target run_ecb_cut_tests"
+.PHONY : tests/CMakeFiles/run_ecb_cut_tests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/run_ecb_cut_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_ecb_cut_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/run_ecb_cut_tests.dir/rule
+
+# Convenience name for target.
+run_ecb_cut_tests: tests/CMakeFiles/run_ecb_cut_tests.dir/rule
+.PHONY : run_ecb_cut_tests
+
+# clean rule for target.
+tests/CMakeFiles/run_ecb_cut_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ecb_cut_tests.dir/build.make tests/CMakeFiles/run_ecb_cut_tests.dir/clean
+.PHONY : tests/CMakeFiles/run_ecb_cut_tests.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/run_byte_ecb_hard_tests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all: CMakeFiles/utils.dir/all
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all: CMakeFiles/pkcs7.dir/all
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all: CMakeFiles/byte_ecb_hard.dir/all
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all: CMakeFiles/base64.dir/all
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all: CMakeFiles/aes_ecb.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=39,40 "Built target run_byte_ecb_hard_tests"
+.PHONY : tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_byte_ecb_hard_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/run_byte_ecb_hard_tests.dir/rule
+
+# Convenience name for target.
+run_byte_ecb_hard_tests: tests/CMakeFiles/run_byte_ecb_hard_tests.dir/rule
+.PHONY : run_byte_ecb_hard_tests
+
+# clean rule for target.
+tests/CMakeFiles/run_byte_ecb_hard_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_byte_ecb_hard_tests.dir/build.make tests/CMakeFiles/run_byte_ecb_hard_tests.dir/clean
+.PHONY : tests/CMakeFiles/run_byte_ecb_hard_tests.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/run_pkcs7_val_tests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/run_pkcs7_val_tests.dir/all: CMakeFiles/pkcs7_val.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=53,54 "Built target run_pkcs7_val_tests"
+.PHONY : tests/CMakeFiles/run_pkcs7_val_tests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/run_pkcs7_val_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_pkcs7_val_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/run_pkcs7_val_tests.dir/rule
+
+# Convenience name for target.
+run_pkcs7_val_tests: tests/CMakeFiles/run_pkcs7_val_tests.dir/rule
+.PHONY : run_pkcs7_val_tests
+
+# clean rule for target.
+tests/CMakeFiles/run_pkcs7_val_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_pkcs7_val_tests.dir/build.make tests/CMakeFiles/run_pkcs7_val_tests.dir/clean
+.PHONY : tests/CMakeFiles/run_pkcs7_val_tests.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/run_cbc_bitflip_tests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/run_cbc_bitflip_tests.dir/all: CMakeFiles/cbc_bitflip.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=43,44 "Built target run_cbc_bitflip_tests"
+.PHONY : tests/CMakeFiles/run_cbc_bitflip_tests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/run_cbc_bitflip_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_cbc_bitflip_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Ikerlan/Set2/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/run_cbc_bitflip_tests.dir/rule
+
+# Convenience name for target.
+run_cbc_bitflip_tests: tests/CMakeFiles/run_cbc_bitflip_tests.dir/rule
+.PHONY : run_cbc_bitflip_tests
+
+# clean rule for target.
+tests/CMakeFiles/run_cbc_bitflip_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make tests/CMakeFiles/run_cbc_bitflip_tests.dir/clean
+.PHONY : tests/CMakeFiles/run_cbc_bitflip_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

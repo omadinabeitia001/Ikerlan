@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpkcs7_val.a CMakeFiles/pkcs7_val.dir/src/pkcs7_val.cpp.o
+/usr/bin/ranlib libpkcs7_val.a

@@ -243,7 +243,16 @@ aes_ecb_LIB_DEPENDS:STATIC=general;OpenSSL::Crypto;
 base64_LIB_DEPENDS:STATIC=general;OpenSSL::Crypto;
 
 //Dependencies for the target
+byte_ecb_LIB_DEPENDS:STATIC=general;pkcs7;general;aes_ecb;general;base64;general;utils;
+
+//Dependencies for the target
+byte_ecb_hard_LIB_DEPENDS:STATIC=general;pkcs7;general;aes_ecb;general;base64;general;utils;
+
+//Dependencies for the target
 cbc_LIB_DEPENDS:STATIC=general;aes_ecb;general;pkcs7;general;xor;
+
+//Dependencies for the target
+ecb_cut_LIB_DEPENDS:STATIC=general;pkcs7;general;aes_ecb;
 
 //Dependencies for the target
 oracle_LIB_DEPENDS:STATIC=general;aes_ecb;general;cbc;general;pkcs7;general;xor;

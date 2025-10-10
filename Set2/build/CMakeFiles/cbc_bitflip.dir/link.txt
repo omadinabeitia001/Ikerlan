@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcbc_bitflip.a CMakeFiles/cbc_bitflip.dir/src/cbc_bitflip.cpp.o
+/usr/bin/ranlib libcbc_bitflip.a
