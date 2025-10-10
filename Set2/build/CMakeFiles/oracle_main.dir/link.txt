@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/oracle_main.dir/src/oracle_main.cpp.o -o oracle_main  liboracle.a libcbc.a libaes_ecb.a /usr/lib/x86_64-linux-gnu/libcrypto.so libpkcs7.a libxor.a 

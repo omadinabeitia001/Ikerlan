@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcbc.a CMakeFiles/cbc.dir/src/cbc.cpp.o
+/usr/bin/ranlib libcbc.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libxor.a CMakeFiles/xor.dir/src/xor.cpp.o
+/usr/bin/ranlib libxor.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liboracle.a CMakeFiles/oracle.dir/src/oracle.cpp.o
+/usr/bin/ranlib liboracle.a

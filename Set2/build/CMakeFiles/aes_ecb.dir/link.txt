@@ -1,0 +1,2 @@
+/usr/bin/ar qc libaes_ecb.a CMakeFiles/aes_ecb.dir/src/aes_ecb.cpp.o
+/usr/bin/ranlib libaes_ecb.a
