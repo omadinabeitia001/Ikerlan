@@ -1,0 +1,13 @@
+#include "ctr_mode.hpp"
+#include "utils_set3.hpp"
+#include <iostream>
+
+int main() {
+    std::string base64 = "L77na/nrFsKvynd6HzOoG7GHTLXsTVu9qvY/2syLXzhPweyyMTJULu/6/kXX0KSvoOLSFQ==";
+    std::vector<uint8_t> ciphertext = utils_set3::base64Decode(base64);
+
+    std::vector<uint8_t> plaintext = ctr::aesCTR(ciphertext, "YELLOW SUBMARINE", 0);
+    std::cout << std::string(plaintext.begin(), plaintext.end()) << std::endl;
+
+    return 0;
+}
