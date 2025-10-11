@@ -168,6 +168,76 @@ run_ctr_breaker_tests/fast:
 	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_breaker_tests.dir/build.make tests/CMakeFiles/run_ctr_breaker_tests.dir/build
 .PHONY : run_ctr_breaker_tests/fast
 
+# Convenience name for target.
+tests/CMakeFiles/run_ctr_stats_tests.dir/rule:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_ctr_stats_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_ctr_stats_tests.dir/rule
+
+# Convenience name for target.
+run_ctr_stats_tests: tests/CMakeFiles/run_ctr_stats_tests.dir/rule
+.PHONY : run_ctr_stats_tests
+
+# fast build rule for target.
+run_ctr_stats_tests/fast:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_stats_tests.dir/build.make tests/CMakeFiles/run_ctr_stats_tests.dir/build
+.PHONY : run_ctr_stats_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_mt19937_tests.dir/rule:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_mt19937_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_mt19937_tests.dir/rule
+
+# Convenience name for target.
+run_mt19937_tests: tests/CMakeFiles/run_mt19937_tests.dir/rule
+.PHONY : run_mt19937_tests
+
+# fast build rule for target.
+run_mt19937_tests/fast:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt19937_tests.dir/build.make tests/CMakeFiles/run_mt19937_tests.dir/build
+.PHONY : run_mt19937_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_mt_cracker_tests.dir/rule:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_mt_cracker_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_mt_cracker_tests.dir/rule
+
+# Convenience name for target.
+run_mt_cracker_tests: tests/CMakeFiles/run_mt_cracker_tests.dir/rule
+.PHONY : run_mt_cracker_tests
+
+# fast build rule for target.
+run_mt_cracker_tests/fast:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_cracker_tests.dir/build.make tests/CMakeFiles/run_mt_cracker_tests.dir/build
+.PHONY : run_mt_cracker_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_mt_clone_tests.dir/rule:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_mt_clone_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_mt_clone_tests.dir/rule
+
+# Convenience name for target.
+run_mt_clone_tests: tests/CMakeFiles/run_mt_clone_tests.dir/rule
+.PHONY : run_mt_clone_tests
+
+# fast build rule for target.
+run_mt_clone_tests/fast:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_clone_tests.dir/build.make tests/CMakeFiles/run_mt_clone_tests.dir/build
+.PHONY : run_mt_clone_tests/fast
+
+# Convenience name for target.
+tests/CMakeFiles/run_mt_stream_tests.dir/rule:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/run_mt_stream_tests.dir/rule
+.PHONY : tests/CMakeFiles/run_mt_stream_tests.dir/rule
+
+# Convenience name for target.
+run_mt_stream_tests: tests/CMakeFiles/run_mt_stream_tests.dir/rule
+.PHONY : run_mt_stream_tests
+
+# fast build rule for target.
+run_mt_stream_tests/fast:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_stream_tests.dir/build.make tests/CMakeFiles/run_mt_stream_tests.dir/build
+.PHONY : run_mt_stream_tests/fast
+
 test_ctr_breaker.o: test_ctr_breaker.cpp.o
 .PHONY : test_ctr_breaker.o
 
@@ -216,6 +286,126 @@ test_ctr_mode.cpp.s:
 	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_mode_tests.dir/build.make tests/CMakeFiles/run_ctr_mode_tests.dir/test_ctr_mode.cpp.s
 .PHONY : test_ctr_mode.cpp.s
 
+test_ctr_stats.o: test_ctr_stats.cpp.o
+.PHONY : test_ctr_stats.o
+
+# target to build an object file
+test_ctr_stats.cpp.o:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_stats_tests.dir/build.make tests/CMakeFiles/run_ctr_stats_tests.dir/test_ctr_stats.cpp.o
+.PHONY : test_ctr_stats.cpp.o
+
+test_ctr_stats.i: test_ctr_stats.cpp.i
+.PHONY : test_ctr_stats.i
+
+# target to preprocess a source file
+test_ctr_stats.cpp.i:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_stats_tests.dir/build.make tests/CMakeFiles/run_ctr_stats_tests.dir/test_ctr_stats.cpp.i
+.PHONY : test_ctr_stats.cpp.i
+
+test_ctr_stats.s: test_ctr_stats.cpp.s
+.PHONY : test_ctr_stats.s
+
+# target to generate assembly for a file
+test_ctr_stats.cpp.s:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_stats_tests.dir/build.make tests/CMakeFiles/run_ctr_stats_tests.dir/test_ctr_stats.cpp.s
+.PHONY : test_ctr_stats.cpp.s
+
+test_mt19937.o: test_mt19937.cpp.o
+.PHONY : test_mt19937.o
+
+# target to build an object file
+test_mt19937.cpp.o:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt19937_tests.dir/build.make tests/CMakeFiles/run_mt19937_tests.dir/test_mt19937.cpp.o
+.PHONY : test_mt19937.cpp.o
+
+test_mt19937.i: test_mt19937.cpp.i
+.PHONY : test_mt19937.i
+
+# target to preprocess a source file
+test_mt19937.cpp.i:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt19937_tests.dir/build.make tests/CMakeFiles/run_mt19937_tests.dir/test_mt19937.cpp.i
+.PHONY : test_mt19937.cpp.i
+
+test_mt19937.s: test_mt19937.cpp.s
+.PHONY : test_mt19937.s
+
+# target to generate assembly for a file
+test_mt19937.cpp.s:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt19937_tests.dir/build.make tests/CMakeFiles/run_mt19937_tests.dir/test_mt19937.cpp.s
+.PHONY : test_mt19937.cpp.s
+
+test_mt_clone.o: test_mt_clone.cpp.o
+.PHONY : test_mt_clone.o
+
+# target to build an object file
+test_mt_clone.cpp.o:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_clone_tests.dir/build.make tests/CMakeFiles/run_mt_clone_tests.dir/test_mt_clone.cpp.o
+.PHONY : test_mt_clone.cpp.o
+
+test_mt_clone.i: test_mt_clone.cpp.i
+.PHONY : test_mt_clone.i
+
+# target to preprocess a source file
+test_mt_clone.cpp.i:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_clone_tests.dir/build.make tests/CMakeFiles/run_mt_clone_tests.dir/test_mt_clone.cpp.i
+.PHONY : test_mt_clone.cpp.i
+
+test_mt_clone.s: test_mt_clone.cpp.s
+.PHONY : test_mt_clone.s
+
+# target to generate assembly for a file
+test_mt_clone.cpp.s:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_clone_tests.dir/build.make tests/CMakeFiles/run_mt_clone_tests.dir/test_mt_clone.cpp.s
+.PHONY : test_mt_clone.cpp.s
+
+test_mt_cracker.o: test_mt_cracker.cpp.o
+.PHONY : test_mt_cracker.o
+
+# target to build an object file
+test_mt_cracker.cpp.o:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_cracker_tests.dir/build.make tests/CMakeFiles/run_mt_cracker_tests.dir/test_mt_cracker.cpp.o
+.PHONY : test_mt_cracker.cpp.o
+
+test_mt_cracker.i: test_mt_cracker.cpp.i
+.PHONY : test_mt_cracker.i
+
+# target to preprocess a source file
+test_mt_cracker.cpp.i:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_cracker_tests.dir/build.make tests/CMakeFiles/run_mt_cracker_tests.dir/test_mt_cracker.cpp.i
+.PHONY : test_mt_cracker.cpp.i
+
+test_mt_cracker.s: test_mt_cracker.cpp.s
+.PHONY : test_mt_cracker.s
+
+# target to generate assembly for a file
+test_mt_cracker.cpp.s:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_cracker_tests.dir/build.make tests/CMakeFiles/run_mt_cracker_tests.dir/test_mt_cracker.cpp.s
+.PHONY : test_mt_cracker.cpp.s
+
+test_mt_stream.o: test_mt_stream.cpp.o
+.PHONY : test_mt_stream.o
+
+# target to build an object file
+test_mt_stream.cpp.o:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_stream_tests.dir/build.make tests/CMakeFiles/run_mt_stream_tests.dir/test_mt_stream.cpp.o
+.PHONY : test_mt_stream.cpp.o
+
+test_mt_stream.i: test_mt_stream.cpp.i
+.PHONY : test_mt_stream.i
+
+# target to preprocess a source file
+test_mt_stream.cpp.i:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_stream_tests.dir/build.make tests/CMakeFiles/run_mt_stream_tests.dir/test_mt_stream.cpp.i
+.PHONY : test_mt_stream.cpp.i
+
+test_mt_stream.s: test_mt_stream.cpp.s
+.PHONY : test_mt_stream.s
+
+# target to generate assembly for a file
+test_mt_stream.cpp.s:
+	cd /home/student/Ikerlan/Set3/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_stream_tests.dir/build.make tests/CMakeFiles/run_mt_stream_tests.dir/test_mt_stream.cpp.s
+.PHONY : test_mt_stream.cpp.s
+
 test_padding_oracle.o: test_padding_oracle.cpp.o
 .PHONY : test_padding_oracle.o
 
@@ -251,6 +441,11 @@ help:
 	@echo "... test"
 	@echo "... run_ctr_breaker_tests"
 	@echo "... run_ctr_mode_tests"
+	@echo "... run_ctr_stats_tests"
+	@echo "... run_mt19937_tests"
+	@echo "... run_mt_clone_tests"
+	@echo "... run_mt_cracker_tests"
+	@echo "... run_mt_stream_tests"
 	@echo "... run_padding_oracle_tests"
 	@echo "... test_ctr_breaker.o"
 	@echo "... test_ctr_breaker.i"
@@ -258,6 +453,21 @@ help:
 	@echo "... test_ctr_mode.o"
 	@echo "... test_ctr_mode.i"
 	@echo "... test_ctr_mode.s"
+	@echo "... test_ctr_stats.o"
+	@echo "... test_ctr_stats.i"
+	@echo "... test_ctr_stats.s"
+	@echo "... test_mt19937.o"
+	@echo "... test_mt19937.i"
+	@echo "... test_mt19937.s"
+	@echo "... test_mt_clone.o"
+	@echo "... test_mt_clone.i"
+	@echo "... test_mt_clone.s"
+	@echo "... test_mt_cracker.o"
+	@echo "... test_mt_cracker.i"
+	@echo "... test_mt_cracker.s"
+	@echo "... test_mt_stream.o"
+	@echo "... test_mt_stream.i"
+	@echo "... test_mt_stream.s"
 	@echo "... test_padding_oracle.o"
 	@echo "... test_padding_oracle.i"
 	@echo "... test_padding_oracle.s"

@@ -192,6 +192,71 @@ ctr_breaker_main/fast:
 .PHONY : ctr_breaker_main/fast
 
 #=============================================================================
+# Target rules for targets named ctr_stats_main
+
+# Build rule for target.
+ctr_stats_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ctr_stats_main
+.PHONY : ctr_stats_main
+
+# fast build rule for target.
+ctr_stats_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ctr_stats_main.dir/build.make CMakeFiles/ctr_stats_main.dir/build
+.PHONY : ctr_stats_main/fast
+
+#=============================================================================
+# Target rules for targets named mt19937_main
+
+# Build rule for target.
+mt19937_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mt19937_main
+.PHONY : mt19937_main
+
+# fast build rule for target.
+mt19937_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt19937_main.dir/build.make CMakeFiles/mt19937_main.dir/build
+.PHONY : mt19937_main/fast
+
+#=============================================================================
+# Target rules for targets named mt_crack_main
+
+# Build rule for target.
+mt_crack_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mt_crack_main
+.PHONY : mt_crack_main
+
+# fast build rule for target.
+mt_crack_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_crack_main.dir/build.make CMakeFiles/mt_crack_main.dir/build
+.PHONY : mt_crack_main/fast
+
+#=============================================================================
+# Target rules for targets named mt_clone_main
+
+# Build rule for target.
+mt_clone_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mt_clone_main
+.PHONY : mt_clone_main
+
+# fast build rule for target.
+mt_clone_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_clone_main.dir/build.make CMakeFiles/mt_clone_main.dir/build
+.PHONY : mt_clone_main/fast
+
+#=============================================================================
+# Target rules for targets named mt_stream_main
+
+# Build rule for target.
+mt_stream_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mt_stream_main
+.PHONY : mt_stream_main
+
+# fast build rule for target.
+mt_stream_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_stream_main.dir/build.make CMakeFiles/mt_stream_main.dir/build
+.PHONY : mt_stream_main/fast
+
+#=============================================================================
 # Target rules for targets named run_padding_oracle_tests
 
 # Build rule for target.
@@ -229,6 +294,71 @@ run_ctr_breaker_tests: cmake_check_build_system
 run_ctr_breaker_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_breaker_tests.dir/build.make tests/CMakeFiles/run_ctr_breaker_tests.dir/build
 .PHONY : run_ctr_breaker_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_ctr_stats_tests
+
+# Build rule for target.
+run_ctr_stats_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_ctr_stats_tests
+.PHONY : run_ctr_stats_tests
+
+# fast build rule for target.
+run_ctr_stats_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_ctr_stats_tests.dir/build.make tests/CMakeFiles/run_ctr_stats_tests.dir/build
+.PHONY : run_ctr_stats_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_mt19937_tests
+
+# Build rule for target.
+run_mt19937_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_mt19937_tests
+.PHONY : run_mt19937_tests
+
+# fast build rule for target.
+run_mt19937_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt19937_tests.dir/build.make tests/CMakeFiles/run_mt19937_tests.dir/build
+.PHONY : run_mt19937_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_mt_cracker_tests
+
+# Build rule for target.
+run_mt_cracker_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_mt_cracker_tests
+.PHONY : run_mt_cracker_tests
+
+# fast build rule for target.
+run_mt_cracker_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_cracker_tests.dir/build.make tests/CMakeFiles/run_mt_cracker_tests.dir/build
+.PHONY : run_mt_cracker_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_mt_clone_tests
+
+# Build rule for target.
+run_mt_clone_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_mt_clone_tests
+.PHONY : run_mt_clone_tests
+
+# fast build rule for target.
+run_mt_clone_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_clone_tests.dir/build.make tests/CMakeFiles/run_mt_clone_tests.dir/build
+.PHONY : run_mt_clone_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_mt_stream_tests
+
+# Build rule for target.
+run_mt_stream_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_mt_stream_tests
+.PHONY : run_mt_stream_tests
+
+# fast build rule for target.
+run_mt_stream_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/run_mt_stream_tests.dir/build.make tests/CMakeFiles/run_mt_stream_tests.dir/build
+.PHONY : run_mt_stream_tests/fast
 
 home/student/Ikerlan/Set2/src/aes_cbc.o: home/student/Ikerlan/Set2/src/aes_cbc.cpp.o
 .PHONY : home/student/Ikerlan/Set2/src/aes_cbc.o
@@ -446,6 +576,276 @@ src/ctr_mode_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ctr_mode_main.dir/build.make CMakeFiles/ctr_mode_main.dir/src/ctr_mode_main.cpp.s
 .PHONY : src/ctr_mode_main.cpp.s
 
+src/ctr_stats.o: src/ctr_stats.cpp.o
+.PHONY : src/ctr_stats.o
+
+# target to build an object file
+src/ctr_stats.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/ctr_stats.cpp.o
+.PHONY : src/ctr_stats.cpp.o
+
+src/ctr_stats.i: src/ctr_stats.cpp.i
+.PHONY : src/ctr_stats.i
+
+# target to preprocess a source file
+src/ctr_stats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/ctr_stats.cpp.i
+.PHONY : src/ctr_stats.cpp.i
+
+src/ctr_stats.s: src/ctr_stats.cpp.s
+.PHONY : src/ctr_stats.s
+
+# target to generate assembly for a file
+src/ctr_stats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/ctr_stats.cpp.s
+.PHONY : src/ctr_stats.cpp.s
+
+src/ctr_stats_main.o: src/ctr_stats_main.cpp.o
+.PHONY : src/ctr_stats_main.o
+
+# target to build an object file
+src/ctr_stats_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ctr_stats_main.dir/build.make CMakeFiles/ctr_stats_main.dir/src/ctr_stats_main.cpp.o
+.PHONY : src/ctr_stats_main.cpp.o
+
+src/ctr_stats_main.i: src/ctr_stats_main.cpp.i
+.PHONY : src/ctr_stats_main.i
+
+# target to preprocess a source file
+src/ctr_stats_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ctr_stats_main.dir/build.make CMakeFiles/ctr_stats_main.dir/src/ctr_stats_main.cpp.i
+.PHONY : src/ctr_stats_main.cpp.i
+
+src/ctr_stats_main.s: src/ctr_stats_main.cpp.s
+.PHONY : src/ctr_stats_main.s
+
+# target to generate assembly for a file
+src/ctr_stats_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ctr_stats_main.dir/build.make CMakeFiles/ctr_stats_main.dir/src/ctr_stats_main.cpp.s
+.PHONY : src/ctr_stats_main.cpp.s
+
+src/mt19937.o: src/mt19937.cpp.o
+.PHONY : src/mt19937.o
+
+# target to build an object file
+src/mt19937.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt19937.cpp.o
+.PHONY : src/mt19937.cpp.o
+
+src/mt19937.i: src/mt19937.cpp.i
+.PHONY : src/mt19937.i
+
+# target to preprocess a source file
+src/mt19937.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt19937.cpp.i
+.PHONY : src/mt19937.cpp.i
+
+src/mt19937.s: src/mt19937.cpp.s
+.PHONY : src/mt19937.s
+
+# target to generate assembly for a file
+src/mt19937.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt19937.cpp.s
+.PHONY : src/mt19937.cpp.s
+
+src/mt19937_clone.o: src/mt19937_clone.cpp.o
+.PHONY : src/mt19937_clone.o
+
+# target to build an object file
+src/mt19937_clone.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt19937_clone.cpp.o
+.PHONY : src/mt19937_clone.cpp.o
+
+src/mt19937_clone.i: src/mt19937_clone.cpp.i
+.PHONY : src/mt19937_clone.i
+
+# target to preprocess a source file
+src/mt19937_clone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt19937_clone.cpp.i
+.PHONY : src/mt19937_clone.cpp.i
+
+src/mt19937_clone.s: src/mt19937_clone.cpp.s
+.PHONY : src/mt19937_clone.s
+
+# target to generate assembly for a file
+src/mt19937_clone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt19937_clone.cpp.s
+.PHONY : src/mt19937_clone.cpp.s
+
+src/mt19937_main.o: src/mt19937_main.cpp.o
+.PHONY : src/mt19937_main.o
+
+# target to build an object file
+src/mt19937_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt19937_main.dir/build.make CMakeFiles/mt19937_main.dir/src/mt19937_main.cpp.o
+.PHONY : src/mt19937_main.cpp.o
+
+src/mt19937_main.i: src/mt19937_main.cpp.i
+.PHONY : src/mt19937_main.i
+
+# target to preprocess a source file
+src/mt19937_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt19937_main.dir/build.make CMakeFiles/mt19937_main.dir/src/mt19937_main.cpp.i
+.PHONY : src/mt19937_main.cpp.i
+
+src/mt19937_main.s: src/mt19937_main.cpp.s
+.PHONY : src/mt19937_main.s
+
+# target to generate assembly for a file
+src/mt19937_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt19937_main.dir/build.make CMakeFiles/mt19937_main.dir/src/mt19937_main.cpp.s
+.PHONY : src/mt19937_main.cpp.s
+
+src/mt_clone.o: src/mt_clone.cpp.o
+.PHONY : src/mt_clone.o
+
+# target to build an object file
+src/mt_clone.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_clone.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_clone_main.dir/build.make CMakeFiles/mt_clone_main.dir/src/mt_clone.cpp.o
+.PHONY : src/mt_clone.cpp.o
+
+src/mt_clone.i: src/mt_clone.cpp.i
+.PHONY : src/mt_clone.i
+
+# target to preprocess a source file
+src/mt_clone.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_clone.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_clone_main.dir/build.make CMakeFiles/mt_clone_main.dir/src/mt_clone.cpp.i
+.PHONY : src/mt_clone.cpp.i
+
+src/mt_clone.s: src/mt_clone.cpp.s
+.PHONY : src/mt_clone.s
+
+# target to generate assembly for a file
+src/mt_clone.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_clone.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_clone_main.dir/build.make CMakeFiles/mt_clone_main.dir/src/mt_clone.cpp.s
+.PHONY : src/mt_clone.cpp.s
+
+src/mt_clone_main.o: src/mt_clone_main.cpp.o
+.PHONY : src/mt_clone_main.o
+
+# target to build an object file
+src/mt_clone_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_clone_main.dir/build.make CMakeFiles/mt_clone_main.dir/src/mt_clone_main.cpp.o
+.PHONY : src/mt_clone_main.cpp.o
+
+src/mt_clone_main.i: src/mt_clone_main.cpp.i
+.PHONY : src/mt_clone_main.i
+
+# target to preprocess a source file
+src/mt_clone_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_clone_main.dir/build.make CMakeFiles/mt_clone_main.dir/src/mt_clone_main.cpp.i
+.PHONY : src/mt_clone_main.cpp.i
+
+src/mt_clone_main.s: src/mt_clone_main.cpp.s
+.PHONY : src/mt_clone_main.s
+
+# target to generate assembly for a file
+src/mt_clone_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_clone_main.dir/build.make CMakeFiles/mt_clone_main.dir/src/mt_clone_main.cpp.s
+.PHONY : src/mt_clone_main.cpp.s
+
+src/mt_crack_main.o: src/mt_crack_main.cpp.o
+.PHONY : src/mt_crack_main.o
+
+# target to build an object file
+src/mt_crack_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_crack_main.dir/build.make CMakeFiles/mt_crack_main.dir/src/mt_crack_main.cpp.o
+.PHONY : src/mt_crack_main.cpp.o
+
+src/mt_crack_main.i: src/mt_crack_main.cpp.i
+.PHONY : src/mt_crack_main.i
+
+# target to preprocess a source file
+src/mt_crack_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_crack_main.dir/build.make CMakeFiles/mt_crack_main.dir/src/mt_crack_main.cpp.i
+.PHONY : src/mt_crack_main.cpp.i
+
+src/mt_crack_main.s: src/mt_crack_main.cpp.s
+.PHONY : src/mt_crack_main.s
+
+# target to generate assembly for a file
+src/mt_crack_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_crack_main.dir/build.make CMakeFiles/mt_crack_main.dir/src/mt_crack_main.cpp.s
+.PHONY : src/mt_crack_main.cpp.s
+
+src/mt_cracker.o: src/mt_cracker.cpp.o
+.PHONY : src/mt_cracker.o
+
+# target to build an object file
+src/mt_cracker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_cracker.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_crack_main.dir/build.make CMakeFiles/mt_crack_main.dir/src/mt_cracker.cpp.o
+.PHONY : src/mt_cracker.cpp.o
+
+src/mt_cracker.i: src/mt_cracker.cpp.i
+.PHONY : src/mt_cracker.i
+
+# target to preprocess a source file
+src/mt_cracker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_cracker.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_crack_main.dir/build.make CMakeFiles/mt_crack_main.dir/src/mt_cracker.cpp.i
+.PHONY : src/mt_cracker.cpp.i
+
+src/mt_cracker.s: src/mt_cracker.cpp.s
+.PHONY : src/mt_cracker.s
+
+# target to generate assembly for a file
+src/mt_cracker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_cracker.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_crack_main.dir/build.make CMakeFiles/mt_crack_main.dir/src/mt_cracker.cpp.s
+.PHONY : src/mt_cracker.cpp.s
+
+src/mt_stream.o: src/mt_stream.cpp.o
+.PHONY : src/mt_stream.o
+
+# target to build an object file
+src/mt_stream.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_stream.cpp.o
+.PHONY : src/mt_stream.cpp.o
+
+src/mt_stream.i: src/mt_stream.cpp.i
+.PHONY : src/mt_stream.i
+
+# target to preprocess a source file
+src/mt_stream.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_stream.cpp.i
+.PHONY : src/mt_stream.cpp.i
+
+src/mt_stream.s: src/mt_stream.cpp.s
+.PHONY : src/mt_stream.s
+
+# target to generate assembly for a file
+src/mt_stream.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/mt_stream.cpp.s
+.PHONY : src/mt_stream.cpp.s
+
+src/mt_stream_main.o: src/mt_stream_main.cpp.o
+.PHONY : src/mt_stream_main.o
+
+# target to build an object file
+src/mt_stream_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_stream_main.dir/build.make CMakeFiles/mt_stream_main.dir/src/mt_stream_main.cpp.o
+.PHONY : src/mt_stream_main.cpp.o
+
+src/mt_stream_main.i: src/mt_stream_main.cpp.i
+.PHONY : src/mt_stream_main.i
+
+# target to preprocess a source file
+src/mt_stream_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_stream_main.dir/build.make CMakeFiles/mt_stream_main.dir/src/mt_stream_main.cpp.i
+.PHONY : src/mt_stream_main.cpp.i
+
+src/mt_stream_main.s: src/mt_stream_main.cpp.s
+.PHONY : src/mt_stream_main.s
+
+# target to generate assembly for a file
+src/mt_stream_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mt_stream_main.dir/build.make CMakeFiles/mt_stream_main.dir/src/mt_stream_main.cpp.s
+.PHONY : src/mt_stream_main.cpp.s
+
 src/padding_oracle.o: src/padding_oracle.cpp.o
 .PHONY : src/padding_oracle.o
 
@@ -518,6 +918,30 @@ src/pkcs7_set3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/pkcs7_set3.cpp.s
 .PHONY : src/pkcs7_set3.cpp.s
 
+src/untemper.o: src/untemper.cpp.o
+.PHONY : src/untemper.o
+
+# target to build an object file
+src/untemper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/untemper.cpp.o
+.PHONY : src/untemper.cpp.o
+
+src/untemper.i: src/untemper.cpp.i
+.PHONY : src/untemper.i
+
+# target to preprocess a source file
+src/untemper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/untemper.cpp.i
+.PHONY : src/untemper.cpp.i
+
+src/untemper.s: src/untemper.cpp.s
+.PHONY : src/untemper.s
+
+# target to generate assembly for a file
+src/untemper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pad_oracle_lib.dir/build.make CMakeFiles/pad_oracle_lib.dir/src/untemper.cpp.s
+.PHONY : src/untemper.cpp.s
+
 src/utils_set3.o: src/utils_set3.cpp.o
 .PHONY : src/utils_set3.o
 
@@ -554,10 +978,20 @@ help:
 	@echo "... crypto"
 	@echo "... ctr_breaker_main"
 	@echo "... ctr_mode_main"
+	@echo "... ctr_stats_main"
+	@echo "... mt19937_main"
+	@echo "... mt_clone_main"
+	@echo "... mt_crack_main"
+	@echo "... mt_stream_main"
 	@echo "... pad_oracle_lib"
 	@echo "... pad_oracle_main"
 	@echo "... run_ctr_breaker_tests"
 	@echo "... run_ctr_mode_tests"
+	@echo "... run_ctr_stats_tests"
+	@echo "... run_mt19937_tests"
+	@echo "... run_mt_clone_tests"
+	@echo "... run_mt_cracker_tests"
+	@echo "... run_mt_stream_tests"
 	@echo "... run_padding_oracle_tests"
 	@echo "... home/student/Ikerlan/Set2/src/aes_cbc.o"
 	@echo "... home/student/Ikerlan/Set2/src/aes_cbc.i"
@@ -586,6 +1020,39 @@ help:
 	@echo "... src/ctr_mode_main.o"
 	@echo "... src/ctr_mode_main.i"
 	@echo "... src/ctr_mode_main.s"
+	@echo "... src/ctr_stats.o"
+	@echo "... src/ctr_stats.i"
+	@echo "... src/ctr_stats.s"
+	@echo "... src/ctr_stats_main.o"
+	@echo "... src/ctr_stats_main.i"
+	@echo "... src/ctr_stats_main.s"
+	@echo "... src/mt19937.o"
+	@echo "... src/mt19937.i"
+	@echo "... src/mt19937.s"
+	@echo "... src/mt19937_clone.o"
+	@echo "... src/mt19937_clone.i"
+	@echo "... src/mt19937_clone.s"
+	@echo "... src/mt19937_main.o"
+	@echo "... src/mt19937_main.i"
+	@echo "... src/mt19937_main.s"
+	@echo "... src/mt_clone.o"
+	@echo "... src/mt_clone.i"
+	@echo "... src/mt_clone.s"
+	@echo "... src/mt_clone_main.o"
+	@echo "... src/mt_clone_main.i"
+	@echo "... src/mt_clone_main.s"
+	@echo "... src/mt_crack_main.o"
+	@echo "... src/mt_crack_main.i"
+	@echo "... src/mt_crack_main.s"
+	@echo "... src/mt_cracker.o"
+	@echo "... src/mt_cracker.i"
+	@echo "... src/mt_cracker.s"
+	@echo "... src/mt_stream.o"
+	@echo "... src/mt_stream.i"
+	@echo "... src/mt_stream.s"
+	@echo "... src/mt_stream_main.o"
+	@echo "... src/mt_stream_main.i"
+	@echo "... src/mt_stream_main.s"
 	@echo "... src/padding_oracle.o"
 	@echo "... src/padding_oracle.i"
 	@echo "... src/padding_oracle.s"
@@ -595,6 +1062,9 @@ help:
 	@echo "... src/pkcs7_set3.o"
 	@echo "... src/pkcs7_set3.i"
 	@echo "... src/pkcs7_set3.s"
+	@echo "... src/untemper.o"
+	@echo "... src/untemper.i"
+	@echo "... src/untemper.s"
 	@echo "... src/utils_set3.o"
 	@echo "... src/utils_set3.i"
 	@echo "... src/utils_set3.s"
