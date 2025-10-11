@@ -93,7 +93,13 @@ run_cbc_bitflip_tests_EXTERNAL_OBJECTS =
 tests/run_cbc_bitflip_tests: tests/CMakeFiles/run_cbc_bitflip_tests.dir/test_cbc_bitflip.cpp.o
 tests/run_cbc_bitflip_tests: tests/CMakeFiles/run_cbc_bitflip_tests.dir/build.make
 tests/run_cbc_bitflip_tests: libcbc_bitflip.a
+tests/run_cbc_bitflip_tests: libaes_cbc.a
+tests/run_cbc_bitflip_tests: libaes_ecb.a
+tests/run_cbc_bitflip_tests: libpkcs7_val.a
+tests/run_cbc_bitflip_tests: libpkcs7.a
+tests/run_cbc_bitflip_tests: libutils.a
 tests/run_cbc_bitflip_tests: /usr/lib/x86_64-linux-gnu/libgtest_main.a
+tests/run_cbc_bitflip_tests: /usr/lib/x86_64-linux-gnu/libcrypto.so
 tests/run_cbc_bitflip_tests: /usr/lib/x86_64-linux-gnu/libgtest.a
 tests/run_cbc_bitflip_tests: tests/CMakeFiles/run_cbc_bitflip_tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable run_cbc_bitflip_tests"

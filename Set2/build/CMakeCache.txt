@@ -252,6 +252,9 @@ byte_ecb_hard_LIB_DEPENDS:STATIC=general;pkcs7;general;aes_ecb;general;base64;ge
 cbc_LIB_DEPENDS:STATIC=general;aes_ecb;general;pkcs7;general;xor;
 
 //Dependencies for the target
+cbc_bitflip_LIB_DEPENDS:STATIC=general;aes_cbc;general;aes_ecb;general;pkcs7_val;general;pkcs7;general;utils;
+
+//Dependencies for the target
 ecb_cut_LIB_DEPENDS:STATIC=general;pkcs7;general;aes_ecb;
 
 //Dependencies for the target

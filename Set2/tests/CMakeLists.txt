@@ -39,5 +39,5 @@ add_test(NAME PKCS7ValTest COMMAND run_pkcs7_val_tests)
 # Test cbc cbc_bitflip
 
 add_executable(run_cbc_bitflip_tests test_cbc_bitflip.cpp)
-target_link_libraries(run_cbc_bitflip_tests PRIVATE cbc_bitflip GTest::gtest_main)
+target_link_libraries(run_cbc_bitflip_tests PRIVATE cbc_bitflip aes_cbc aes_ecb pkcs7_val pkcs7 utils GTest::gtest_main)
 add_test(NAME CBCBitflipTest COMMAND run_cbc_bitflip_tests)

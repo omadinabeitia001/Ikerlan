@@ -4,7 +4,9 @@
 
 
 int main() {
-    std::string input = "XXXXXXXXXXXXXX"; // 16 bytes para controlar el bloque
+    // Este userdata produce, en el bloque objetivo, ":admin<true:AAAA"
+    // Los primeros 12 bytes serán ":admin<true:" que luego fliparemos a ";admin=true;"
+    std::string input = "XXXXXXXXXXXXXX"; 
     auto ciphertext = cbcEncryptProfile(input);
 
     auto hacked = performBitflipAttack(ciphertext);

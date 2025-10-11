@@ -75,6 +75,7 @@ target_include_directories(aes_cbc PUBLIC include)
 
 add_library(cbc_bitflip src/cbc_bitflip.cpp)
 target_include_directories(cbc_bitflip PUBLIC include)
+target_link_libraries(cbc_bitflip PRIVATE aes_cbc aes_ecb pkcs7_val pkcs7 utils)
 
 # 🚀 Ejecutables
 add_executable(pkcs7_main src/pkcs7_main.cpp)
@@ -101,4 +102,4 @@ add_executable(pkcs7_val_main src/pkcs7_val_main.cpp)
 target_link_libraries(pkcs7_val_main PRIVATE pkcs7_val)
 
 add_executable(cbc_bitflip_main src/cbc_bitflip_main.cpp)
-target_link_libraries(cbc_bitflip_main PRIVATE cbc_bitflip aes_cbc pkcs7 pkcs7_val utils)
+target_link_libraries(cbc_bitflip_main PRIVATE cbc_bitflip aes_cbc aes_ecb pkcs7_val pkcs7 utils)

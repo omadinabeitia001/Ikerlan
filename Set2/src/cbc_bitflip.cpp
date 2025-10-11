@@ -1,5 +1,6 @@
 #include "cbc_bitflip.hpp"
 #include "aes_cbc.hpp"
+#include "aes_ecb.hpp"
 #include "pkcs7_val.hpp"
 #include "pkcs7.hpp"
 #include "utils.hpp"
@@ -37,20 +38,47 @@ bool cbcDecryptAndCheck(const std::vector<uint8_t>& ciphertext) {
     return result.find(";admin=true;") != std::string::npos;
 }
 
+// intenta todos los posibles bytes originales (0..255)
 std::vector<uint8_t> performBitflipAttack(const std::vector<uint8_t>& ciphertext) {
     std::vector<uint8_t> modified = ciphertext;
 
-    // Queremos inyectar ";admin=true;" en el bloque que contiene userdata
-    // Localiza el bloque anterior y modifica sus bytes para forzar el XOR deseado
-
-    std::string target = ";admin=true;";
-    std::string injected = "%3Badmin%3Dtrue%3B"; // lo que se cifró originalmente
-
-    size_t offset = 32; // suponiendo que userdata empieza en el tercer bloque
-
-    for (size_t i = 0; i < target.size(); ++i) {
-        modified[offset + i] ^= injected[i] ^ target[i];
+    const size_t BLOCK = 16;
+    const size_t prefix_len = 32; // como antes
+    if (ciphertext.size() < prefix_len + BLOCK) {
+        throw std::runtime_error("ciphertext demasiado corto para atacar");
     }
 
+    const size_t target_block_start = prefix_len;
+    const size_t prev_block_start   = target_block_start - BLOCK;
+    const std::string target = ";admin=true;"; // 12 bytes
+
+    if (prev_block_start + target.size() > modified.size()) {
+        throw std::runtime_error("ciphertext demasiado corto para modificar los bytes requeridos");
+    }
+
+    // Copia original del bloque anterior para poder probar varios candidatos
+    std::vector<uint8_t> original_prev_block(modified.begin() + prev_block_start,
+                                             modified.begin() + prev_block_start + target.size());
+
+    // Probar todos los posibles bytes originales (0..255)
+    for (int candidate = 0; candidate <= 255; ++candidate) {
+        // restaura estado original de los bytes que tocaremos
+        for (size_t i = 0; i < target.size(); ++i) {
+            modified[prev_block_start + i] = original_prev_block[i];
+        }
+
+        // aplica el flip asumiendo que el plaintext original en esas posiciones era 'candidate'
+        for (size_t i = 0; i < target.size(); ++i) {
+            modified[prev_block_start + i] ^= static_cast<uint8_t>(candidate) ^ static_cast<uint8_t>(target[i]);
+        }
+
+        // prueba si el cambio consigue el flag admin
+        if (cbcDecryptAndCheck(modified)) {
+            return modified; // éxito
+        }
+        // si no, seguimos con el siguiente candidate
+    }
+
+    // Si nada funciona, devolvemos la última modificación (sin éxito)
     return modified;
 }

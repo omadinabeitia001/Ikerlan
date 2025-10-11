@@ -94,9 +94,11 @@ cbc_bitflip_main: CMakeFiles/cbc_bitflip_main.dir/src/cbc_bitflip_main.cpp.o
 cbc_bitflip_main: CMakeFiles/cbc_bitflip_main.dir/build.make
 cbc_bitflip_main: libcbc_bitflip.a
 cbc_bitflip_main: libaes_cbc.a
-cbc_bitflip_main: libpkcs7.a
+cbc_bitflip_main: libaes_ecb.a
 cbc_bitflip_main: libpkcs7_val.a
+cbc_bitflip_main: libpkcs7.a
 cbc_bitflip_main: libutils.a
+cbc_bitflip_main: /usr/lib/x86_64-linux-gnu/libcrypto.so
 cbc_bitflip_main: CMakeFiles/cbc_bitflip_main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Ikerlan/Set2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cbc_bitflip_main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cbc_bitflip_main.dir/link.txt --verbose=$(VERBOSE)
